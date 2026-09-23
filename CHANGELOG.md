@@ -4,6 +4,19 @@ All notable changes to this corpus are recorded here. The dataset follows semant
 the **major.minor** version describes the corpus state, and any change to the *schema* bumps the
 schema version independently (see `schema/SCHEMA.md`).
 
+## [Unreleased]
+
+### Added
+- A **Try it live** section at the top of the README: screenshots of both GitHub Pages sites, each
+  linking to the matching part of the page, deep links into every section of the method walkthrough,
+  and a four-line recipe for checking everything locally.
+
+### Fixed
+- The method walkthrough's headline still said "10 songs encoded" and "126 automated checks",
+  and its introduction said "how ten of them became data". Those values were typed into the page
+  generator. The song count now comes from the corpus, and the last figure is now the number of
+  taal families, also computed. A hardcoded test count would go stale again with the next test.
+
 ## [0.2.0] — 2026-09-02
 
 Twenty more songs, and two corrections the new songs forced.

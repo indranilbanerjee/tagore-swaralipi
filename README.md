@@ -9,11 +9,92 @@
 
 **An open dataset of Rabindrasangeet swaralipi in machine-readable symbolic notation — to our knowledge the first of its kind — now 30 songs across 20 taal families, plus one experiment: a frontier AI model composing a continuation of a Tagore song, in-grammar, with audio.**
 
+**[🎧 Listen to all 30](https://indranilbanerjee.github.io/tagore-swaralipi/)** · **[🛠 See how it was made](https://indranilbanerjee.github.io/tagore-swaralipi/method.html)** · **[📦 Latest release](https://github.com/indranilbanerjee/tagore-swaralipi/releases/latest)** · **[🧪 The AI experiment](experiment/EXPERIMENT.md)** · **[💖 Sponsor](https://github.com/sponsors/indranilbanerjee)**
+
 > **Can you read swaralipi?** You are who this project needs most, and you don't need to write a
 > line of code. See [how to verify a song](CONTRIBUTING.md#1-verify-a-song-against-the-printed-swarabitan) —
 > it takes ten minutes, and you'll be credited in the data itself.
 
 Rabindranath Tagore left behind roughly 2,200 songs, and — almost uniquely among song traditions of that scale — nearly all of them were *notated*, in the akarmatrik swaralipi system, across the ~64 volumes of **Swarabitan**. That notation has been in the public domain in India since 1 January 2002. Yet in 2026, if you want to compute over Rabindrasangeet — study its melodic grammar, train a model on it, analyse how Tagore bent a Scots air into a khemta — there is no open symbolic dataset. The notation exists as page scans and font-locked websites. This repository is a small, careful first move against that gap.
+
+## Try it live
+
+Two pages, both built from the data in this repo and served free by GitHub Pages. No install and no sign-in.
+Click any picture to open that part of the page.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/"><img src="docs/img/listen-top.png" alt="Listening page"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/">Listening page</a></b><br>
+<sub>All 30 songs, each with a player, taal, confidence and links to its JSON, sargam-text, MIDI and MusicXML.</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/"><img src="docs/img/listen-songs.png" alt="Every song, next to its notation"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/">Every song, next to its notation</a></b><br>
+<sub>Open “see the notation” on any song to read the swaralipi the audio is made from.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html"><img src="docs/img/method-top.png" alt="How it was made: interactive walkthrough"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html">How it was made: interactive walkthrough</a></b><br>
+<sub>From a font-locked archive page to data a machine can read, in nine sections.</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#decode"><img src="docs/img/method-decoder.png" alt="The decoder"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#decode">The decoder</a></b><br>
+<sub>Click any source token to see what it means, how it is stored, and the evidence for the reading.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#pipeline"><img src="docs/img/method-pipeline.png" alt="The pipeline, stage by stage"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#pipeline">The pipeline, stage by stage</a></b><br>
+<sub>Witness → decode → canonical JSON → MIDI/MusicXML/text → tests and audio. Click through each stage.</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#follow"><img src="docs/img/method-follower.png" alt="The notation follower"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#follow">The notation follower</a></b><br>
+<sub>Press play: the current matra lights up while the taal cycle turns underneath. Shown: a 14-matra dhamar.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#experiment"><img src="docs/img/method-abtest.png" alt="Blind A/B test: Tagore or the model?"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#experiment">Blind A/B test: Tagore or the model?</a></b><br>
+<sub>Same sthayi, same synthesizer. Listen to both antaras, guess, then reveal.</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#findings"><img src="docs/img/method-findings.png" alt="What the data shows"></a><br>
+<b><a href="https://indranilbanerjee.github.io/tagore-swaralipi/method.html#findings">What the data shows</a></b><br>
+<sub>Which note lands on sam, how much of the music is melisma: questions that were not answerable before.</sub>
+</td>
+</tr>
+</table>
+
+**Jump straight to a section of the walkthrough:**
+[the problem](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#problem) ·
+[what we started with](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#input) ·
+[the decoder](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#decode) ·
+[the pipeline](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#pipeline) ·
+[listen and follow](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#follow) ·
+[checking against print](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#verify) ·
+[the experiment](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#experiment) ·
+[what the data shows](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#findings) ·
+[use it](https://indranilbanerjee.github.io/tagore-swaralipi/method.html#use)
+
+**Test it yourself.** Everything on those pages can be checked locally in a minute:
+
+```bash
+git clone https://github.com/indranilbanerjee/tagore-swaralipi && cd tagore-swaralipi
+python -m http.server 8000          # then open localhost:8000 and localhost:8000/method.html
+python examples/explore.py          # five questions over the corpus, no dependencies
+pip install -r requirements.txt pytest && python -m pytest tests/   # the 393 checks CI runs
+```
+
+If a phrase sounds wrong, or the notation doesn't match your Swarabitan, that's a real bug.
+[Report it here](../../issues/new?template=notation-correction.yml).
 
 ## What's here
 
@@ -34,6 +115,7 @@ Rabindranath Tagore left behind roughly 2,200 songs, and — almost uniquely amo
 | `experiment/` | **"Claude continues Tagore"** — a blind composition experiment with A/B audio ([writeup](experiment/EXPERIMENT.md)) |
 | `index.html` | The [listening page](https://indranilbanerjee.github.io/tagore-swaralipi/) — notation beside audio, built by `tools/build_site.py` |
 | `method.html` | The [interactive methodology walkthrough](https://indranilbanerjee.github.io/tagore-swaralipi/method.html) — decoder, pipeline, notation follower, blind listening test. Generated from the corpus by `tools/build_method_page.py` |
+| `docs/img/` | Screenshots of both live pages, used in this README |
 | `sources/catalogue.json` | A map of **all 1,568 songs** in the witness archive that carry notation — taal, parjaay and URL for each. Built by `tools/discover_songs.py`; this is where the next songs come from |
 | `tests/` | 393 integrity checks — schema, taal arithmetic, provenance, lossless round-trip. Run in CI on every PR |
 
@@ -104,6 +186,8 @@ phrase sounds wrong, you have found a bug worth [reporting](../../issues/new?tem
 ### The experiment, A/B
 
 Same sthayi, same synthesizer, same tonic. The only difference is who wrote the second half.
+
+<a href="https://indranilbanerjee.github.io/tagore-swaralipi/"><img src="docs/img/listen-experiment.png" alt="The A/B experiment on the listening page" width="720"></a>
 
 | | |
 |---|---|

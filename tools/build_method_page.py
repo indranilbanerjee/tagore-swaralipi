@@ -501,6 +501,8 @@ def build():
     total_cells = sum(len(d["lines"][i]["cells"]) for d in docs for i in range(len(d["lines"])))
     total_units = sum(len(c["units"]) for d in docs for l in d["lines"] for c in l["cells"])
     verified = sum(1 for d in docs if d["provenance"].get("scan_verification"))
+    n_songs = len(docs)
+    n_taals = len({d["taal"]["name"]["translit"] for d in docs})
     jsonld = (ROOT / "dataset.jsonld").read_text(encoding="utf-8")
 
     nav_items = [("problem", "The problem"), ("input", "Input"), ("decode", "The decode"),
@@ -513,7 +515,7 @@ def build():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How it was made — Songs of Tagore, In Data</title>
-<meta name="description" content="An interactive walkthrough of how ten Rabindrasangeet were digitized from akarmatrik swaralipi into open symbolic notation: the source, the decoding, the pipeline, the verification against printed Swarabitan, and a blind AI-continuation experiment.">
+<meta name="description" content="An interactive walkthrough of how {n_songs} Rabindrasangeet were digitized from akarmatrik swaralipi into open symbolic notation: the source, the decoding, the pipeline, the verification against printed Swarabitan, and a blind AI-continuation experiment.">
 <style>{CSS}</style>
 <script type="application/ld+json">{jsonld}</script>
 </head>
@@ -532,14 +534,14 @@ def build():
   <p class="muted" style="font-size:1.08rem">Rabindranath Tagore left about 2,200 songs, and — unusually for any
   song tradition of that size — nearly all of them were <em>written down</em>, in the Bengali
   akarmatrik notation system. Yet none of that notation was machine-readable. This page shows
-  exactly how ten of them became data, what had to be decoded, how it was checked, and what
+  exactly how {n_songs} of them became data, what had to be decoded, how it was checked, and what
   happened when a frontier AI model was asked to continue one.</p>
   <div class="counter">
-    <div><span data-n="10">0</span><small>songs encoded</small></div>
+    <div><span data-n="{n_songs}">0</span><small>songs encoded</small></div>
     <div><span data-n="{total_cells}">0</span><small>matras</small></div>
     <div><span data-n="{total_units}">0</span><small>note units</small></div>
     <div><span data-n="{verified}">0</span><small>verified against print</small></div>
-    <div><span data-n="126">0</span><small>automated checks</small></div>
+    <div><span data-n="{n_taals}">0</span><small>taal families</small></div>
   </div>
 </div>
 
