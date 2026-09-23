@@ -139,7 +139,7 @@ unusually well suited to supply.
 
 - **Compositions**: Rabindranath Tagore (d. 1941). His works entered the Indian public domain on 1 January 2002; the government explicitly declined to extend Visva-Bharati's term in 2001.
 - **Primary witness**: the [SNLTR Rabindra Rachanabali digital edition](https://rabindra-rachanabali.nltr.org/) (Govt. of West Bengal), itself a digitization of Swarabitan. This dataset **re-encodes the musical facts** — pitches, durations, taal structure, lyrics of public-domain songs — into an original schema; it redistributes nothing from any witness — no page images, no fonts, no HTML, no typographical arrangement. The witness pages are fetched on demand by `tools/fetch_sources.py` and are git-ignored (see [`sources/README.md`](sources/README.md)). Per-song witness URLs, retrieval dates and cross-witness agreement are recorded in each file's `provenance` block. Where an independent second witness existed (geetabitan.com metadata, romanized sargam archives), agreement is noted.
-- **This is v0.1, archive-derived.** The v0.2 milestone is verification of every song against first-edition Swarabitan page scans (Internet Archive holds several volumes). Each file carries an honest `confidence` block; corrections are welcome and wanted — that is what the issue tracker is for.
+- **This is v0.2, archive-derived.** 3 of the 30 songs have been checked against first-edition Swarabitan page scans (Internet Archive holds several volumes); verifying the other 27 is the whole of v0.3. Each file carries an honest `confidence` block; corrections are welcome and wanted — that is what the issue tracker is for.
 - **License**: data (`data/`, `derived/`, `audio/`) **CC BY 4.0**; code (`tools/`, `schema/`) **MIT**. Cite as in `CITATION.cff`.
 
 ## Reproduce everything
@@ -203,16 +203,16 @@ We gave a frontier LLM (Claude Fable 5) the nine other songs plus only the sthay
 
 ## Roadmap
 
-**v0.2** finishes what this release started: verify the remaining seven songs against the printed
-Swarabitan, add the second setting of মাঝে মাঝে তব দেখা পাই, decode the 22 unresolved source
-tokens, and mint a DOI. **v0.3** makes the notation legible again — an akarmatrik renderer that
-prints proper Bengali notation from the JSON, meend as first-class spans, Bengali-language docs.
-**v0.5** takes it to fifty songs across all six parjaays, with a tooling workflow that makes
-verification cheap. **v1.0** is not a song count; it's the point where the format is stable and the
-project no longer depends on any one person.
+**v0.3** adds no songs. It exists to close the gap v0.2 opened: verify the remaining 27 songs
+against the printed Swarabitan, settle the কৃষ্ণকলি taal conflict, decode the 54 unreadable glyphs
+and the 22 `i`-form tokens, and add the second setting of মাঝে মাঝে তব দেখা পাই. **v0.4** makes the
+notation legible again: an akarmatrik renderer that prints proper Bengali notation from the JSON,
+meend as first-class spans, and Bengali-language docs. **v0.5** takes it to fifty songs across all six
+parjaays, with a tooling workflow that makes verification cheap. **v1.0** is not a song count. It's
+the point where the format is stable and the project no longer depends on any one person.
 
-The guiding rule is that **the corpus grows only as fast as it can be verified** — a hundred
-unchecked songs would be worth less than the ten we have.
+The rule after v0.2 is that **verification catches up before the corpus grows again.** v0.2 tripled
+the song count while the verified count stayed at three, and v0.3 is the correction.
 
 [`ROADMAP.md`](ROADMAP.md) has the detail, including which items are **help wanted**, the open
 questions we can't yet answer, and what we've deliberately decided *not* to build.

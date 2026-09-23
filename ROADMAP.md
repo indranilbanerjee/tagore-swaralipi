@@ -137,9 +137,9 @@ Things we don't know, recorded so they aren't quietly forgotten:
 4. **Anacrusis vs. printed line breaks** — some lines end with pickup cells for the next cycle.
    We record them as printed, but "as printed" and "as counted" are not always the same thing, and
    the taal-arithmetic test tolerates a small number of off-cycle lines because of it.
-5. **Whether the corpus is representative.** Ten songs were chosen for structural diversity, which
-   is the right call for testing a schema and the wrong one for statistics. Any inference drawn
-   from this corpus is an inference about these ten songs.
+5. **Whether the corpus is representative.** Thirty songs were chosen for structural coverage
+   (twenty taal families), which is the right call for testing a schema and the wrong one for
+   statistics. Any inference drawn from this corpus is an inference about these thirty songs.
 
 ---
 

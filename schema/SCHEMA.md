@@ -1,6 +1,6 @@
 # Swaralipi-JSON: an akarmatrik-faithful symbolic encoding
 
-**Version 0.1** · Canonical format of the *Ten Songs of Tagore, In Data* corpus
+**Version 0.1** · Canonical format of the *Songs of Tagore, In Data* corpus
 
 ## Design principle
 
@@ -122,8 +122,8 @@ bars. Section names follow Rabindrasangeet convention: `sthayi`, `antara`,
 ```
 
 Every song states where its notation was read from, when, and how much the
-witnesses agree. This corpus is **archive-derived (v0.1)**; verification against
-first-edition Swarabitan page scans is the v0.2 milestone.
+witnesses agree. This corpus is **archive-derived**; verification against first-edition
+Swarabitan page scans is the v0.3 milestone (3 of 30 songs done).
 
 ## What is intentionally NOT encoded
 
