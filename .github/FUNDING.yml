@@ -7,8 +7,7 @@
 #     GitHub silently ignores unknown handles but the button looks better
 #     when every listed option works.
 
-# The repo lives under the NeelVerse-Lab org, but sponsorship goes to the maintainer
-# personally — GitHub allows a FUNDING.yml to name any Sponsors-enabled account.
+# The repo and the sponsorship both live on the maintainer's personal account
 github: [indranilbanerjee]
 
 # Uncomment and fill in as you set these up:

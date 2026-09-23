@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-REPO = "https://github.com/NeelVerse-Lab/tagore-swaralipi"
+REPO = "https://github.com/indranilbanerjee/tagore-swaralipi"
 MATRA_S = 0.66          # tools/synth.py, taal-bound songs
 MATRA_S_FREE = 0.9      # tools/synth.py, talamukta songs
 
@@ -172,6 +172,7 @@ pre{overflow-x:auto;background:var(--panel2);border:1px solid var(--line);border
 .beat.sam{border-color:var(--sam)}
 .beat.taali{border-color:var(--taali)}
 .beat.khali{border-color:var(--khali);opacity:.65}
+.beat.edge{border-color:var(--muted);opacity:.85}
 .beat.now{background:var(--accent);color:#1a1008;font-weight:700;transform:scale(1.16);border-color:var(--accent)}
 .legend{display:flex;gap:16px;font-size:.78rem;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}
 .legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:middle}
@@ -321,7 +322,7 @@ function renderSong(s) {
     s.vibhags.forEach((v, vi) => {
       for (let k = 0; k < v; k++) {
         const b = document.createElement('div');
-        b.className = 'beat ' + (k === 0 ? (s.beats[vi] || 'taali') : '');
+        b.className = 'beat ' + (k === 0 ? ((s.beats && s.beats[vi]) || 'edge') : '');
         b.textContent = ++m; cycleEl.appendChild(b);
       }
     });
@@ -445,7 +446,7 @@ STAGES = [
      "note": "Readable by a human with the font installed. Unreadable by any program — which is why no dataset existed."},
     {"title": "2 · The decode",
      "body": "Work out what each token means, then prove it three independent ways rather than trusting the guess: against a second unrelated archive of romanized sargam; against music theory (do the decoded note-sets reproduce each song's known raga?); and by ear, since audio synthesized from the decoded data should be recognisably the song.",
-     "code": "sa ra ga ma pa qa na  →  S  R  G  M  P  D  N\nka → kori Ma    ta → komal Ga    da → komal Dha    ua → komal Ni\nsuffix h → lower octave    suffix f → upper octave    - → sustain",
+     "code": "sa ra ga ma pa qa na  →  S  R  G  M  P  D  N\nka → kori Ma   ta → komal Ga   da → komal Dha   ua → komal Ni   va → komal Re\nsuffix h → lower octave    suffix f → upper octave    - → sustain",
      "note": "A wrong reading of any komal/kori token would have scrambled every raga signature in the corpus. None were scrambled."},
     {"title": "3 · The canonical form",
      "body": "Encode into a schema built for this notation rather than borrowed from Western music: swara degree with komal and kori as first-class letters, three saptaks, one cell per matra dividing evenly among its units, taal cycles with sam/taali/khali, and Bengali lyrics aligned syllable-to-matra. Every song carries where it came from and how confident we are.",
@@ -457,7 +458,7 @@ STAGES = [
      "note": "CI regenerates all of them on every push and fails if a single byte differs from what is committed."},
     {"title": "5 · The proof",
      "body": "Synthesize audio straight from the data. This is not decoration — it is the test. If the notation was decoded correctly the song is recognisable; if a matra is wrong, anyone who knows the song hears it immediately. Then check the notation itself against scans of the printed Swarabitan, page by page.",
-     "code": "126 automated checks · schema · taal arithmetic · pitch range\n            · provenance · lossless round-trip · reproducible outputs\n 3 of 10 songs read against the printed first edition — all exact",
+     "code": "393 automated checks · schema · taal arithmetic · pitch range · provenance\n            · lossless round-trip · reproducible outputs · printed-cycle agreement\n 3 of 30 songs read against the printed first edition — all exact",
      "note": "The audio on this page is the pipeline's own output. You are listening to the dataset."},
 ]
 
@@ -479,11 +480,16 @@ def build():
             for f in sorted(glob.glob(str(ROOT / "data" / "songs" / "*.json")))]
     by_id = {d["id"]: d for d in docs}
 
-    # follower order: put the scan-verified and structurally interesting ones first
-    order = ["purano-sei-diner-katha", "bhalobese-sokhi", "gram-chhara-oi-ranga-matir-path",
-             "tumi-robe-nirobe", "esho-shyamalo-sundoro", "ekla-chalo-re",
-             "anandaloke-mangalaloke", "aguner-poroshmoni", "majhe-majhe-tobo-dekha-pai",
-             "phule-phule-dhole-dhole"]
+    # Follower order: scan-verified songs first, then one song per taal so the picker
+    # doubles as a tour of the taal system, then everything else.
+    lead = ["purano-sei-diner-katha", "bhalobese-sokhi", "gram-chhara-oi-ranga-matir-path"]
+    order, seen_taal = list(lead), set()
+    for d in docs:
+        t = d["taal"]["name"]["translit"]
+        if d["id"] not in order and t not in seen_taal:
+            seen_taal.add(t)
+            order.append(d["id"])
+    order += [d["id"] for d in docs if d["id"] not in order]
     songs = [pack_song(by_id[i]) for i in order if i in by_id]
 
     # experiment: real (lines 0-7) vs AI (sthayi 0-3 + model's 4 lines)
@@ -506,7 +512,7 @@ def build():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>How it was made — Ten Songs of Tagore, In Data</title>
+<title>How it was made — Songs of Tagore, In Data</title>
 <meta name="description" content="An interactive walkthrough of how ten Rabindrasangeet were digitized from akarmatrik swaralipi into open symbolic notation: the source, the decoding, the pipeline, the verification against printed Swarabitan, and a blind AI-continuation experiment.">
 <style>{CSS}</style>
 <script type="application/ld+json">{jsonld}</script>
@@ -623,6 +629,7 @@ def build():
       <span><i style="background:var(--sam)"></i>sam — beat one, the anchor</span>
       <span><i style="background:var(--taali)"></i>taali — clap</span>
       <span><i style="background:var(--khali)"></i>khali — the empty beat</span>
+      <span><i style="background:var(--muted)"></i>vibhag start — this taal's clap pattern is not stated by the source</span>
     </div>
     <div class="ctrl">
       <button id="play">Play</button>
@@ -718,15 +725,15 @@ def build():
 
   <h3>Which note lands on sam?</h3>
   <p class="small muted">Sam is beat one — the anchor the whole cycle hangs from. Across the taal-bound
-  songs, Pa sits there nearly twice as often as the tonic itself.</p>
-  {bars([("P", 27.7), ("S", 14.8), ("G", 12.9), ("M", 12.1), ("D", 9.5), ("S'", 9.5)])}
+  songs, Pa sits there nearly twice as often as the tonic itself — and it stayed that way when the corpus grew from ten songs to thirty.</p>
+  {bars([("P", 21.6), ("M", 13.4), ("S", 12.1), ("G", 11.7), ("S'", 9.8), ("D", 8.2)])}
 
   <h3>How much of this music is melisma?</h3>
   <p class="small muted">The share of matras where a syllable is still sounding rather than a new one
-  starting — a three-and-a-half-fold spread across ten songs.</p>
-  {bars([("গ্রামছাড়া", 53.0), ("তুমি রবে", 38.5), ("আনন্দলোকে", 31.0), ("ফুলে ফুলে", 30.2), ("আগুনের", 28.4), ("মাঝে মাঝে", 14.9)])}
+  starting — nearly a six-fold spread across the corpus.</p>
+  {bars([("এ পরবাসে", 65.3), ("গ্রামছাড়া", 53.0), ("তুমি রবে", 38.5), ("আনন্দলোকে", 31.0), ("আগুনের", 28.4), ("বিপদে মোরে", 11.2)])}
 
-  <p class="small muted">These are hints on ten songs; on five hundred they would be findings. Both
+  <p class="small muted">These are hints on thirty songs — the sam figure held when the corpus tripled, which is the first weak evidence it is about the music and not the sample. Both
   charts come from <a href="{REPO}/blob/main/examples/explore.py">examples/explore.py</a>, which runs
   in ten seconds with no dependencies. The gap between "hint" and "finding" is what the project is for.</p>
 </section>

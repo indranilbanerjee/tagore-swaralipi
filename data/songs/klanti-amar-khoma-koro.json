@@ -1,0 +1,3736 @@
+{
+ "schema_version": "0.1",
+ "id": "klanti-amar-khoma-koro",
+ "title": {
+  "bn": "ক্লান্তি আমার ক্ষমা করো প্রভু",
+  "translit": "Klanti amar khoma koro probhu"
+ },
+ "composer": "Rabindranath Tagore",
+ "parjaay": {
+  "bn": "পূজা - বিরহ",
+  "en": "Worship"
+ },
+ "raga_anga": null,
+ "taal": {
+  "name": {
+   "bn": "দাদরা",
+   "translit": "dadra"
+  },
+  "matras": 6,
+  "vibhags": [
+   3,
+   3
+  ],
+  "beats": [
+   "sam",
+   "khali"
+  ],
+  "talamukta": false
+ },
+ "sections": [
+  "sthayi",
+  "antara",
+  "sanchari"
+ ],
+ "lines": [
+  {
+   "line_no": 1,
+   "section": "sthayi",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক্লা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ন্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "তি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "আ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "র্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক৹",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "প্র",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "section_bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 2,
+   "section": "sthayi",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "থে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "দি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 3,
+   "section": "sthayi",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0,
+        "kori": true
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ড়ি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 4,
+   "section": "sthayi",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "M",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "section_bar",
+     "cell": 6
+    }
+   ]
+  },
+  {
+   "line_no": 5,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "এ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "ই",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "যে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "হি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "য়া",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "থ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "থ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "section_bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 6,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "কাঁ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "পে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "আ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "জি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "D",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "এ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ম",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "ন্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ত",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 7,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "এ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ই",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "বে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "দ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "না",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 8,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 9,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0,
+        "kori": true
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "প্র",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "থে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "দি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 10,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0,
+        "kori": true
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ড়ি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 11,
+   "section": "antara",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "M",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "section_bar",
+     "cell": 6
+    }
+   ]
+  },
+  {
+   "line_no": 12,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "এ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "ই",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "দী",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "ন",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "তা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": -1
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": -1
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "রো৹",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "প্র",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "section_bar",
+     "cell": 0
+    },
+    {
+     "type": "repeat_open",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 13,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "৹ন্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "পা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "নে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "alt_open",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 14,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "তা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "কা৹",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "৹ই",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "দি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "repeat_close",
+     "cell": 11
+    },
+    {
+     "type": "alt_close",
+     "cell": 11
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 15,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "দি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "নে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "র্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "তা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "পে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "রৌ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "দ্র",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "জ্বা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "লা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "য়্",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 16,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 1
+        }
+       ]
+      }
+     ],
+     "lyric": "শু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       }
+      }
+     ],
+     "lyric": "কা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "য়্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "লা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 1
+       },
+       "kan": [
+        {
+         "degree": "D",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "পূ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "জা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "র্",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "থা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "লা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "য়্",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 17,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "সে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": "ই",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ম্লা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ন",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "তা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 18,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ক্ষ",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "মা",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "D",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "রো",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 19,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0,
+        "kori": true
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "প্র",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "R",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "থে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "দি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       }
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 20,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "N",
+        "saptak": -1
+       },
+       "kan": [
+        {
+         "degree": "S",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "পি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ছি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "S",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "য়ে",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "P",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "প",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0,
+        "kori": true
+       },
+       "kan": [
+        {
+         "degree": "P",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ড়ি",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "M",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": "ক",
+     "melisma": false
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "bar",
+     "cell": 6
+    },
+    {
+     "type": "vibhag",
+     "cell": 9
+    },
+    {
+     "type": "bar",
+     "cell": 12
+    }
+   ]
+  },
+  {
+   "line_no": 21,
+   "section": "sanchari",
+   "cells": [
+    {
+     "units": [
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       },
+       "kan": [
+        {
+         "degree": "M",
+         "saptak": 0
+        }
+       ]
+      }
+     ],
+     "lyric": "ভু",
+     "melisma": false
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "R",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    },
+    {
+     "units": [
+      {
+       "type": "sustain"
+      },
+      {
+       "type": "swara",
+       "swara": {
+        "degree": "G",
+        "saptak": 0
+       }
+      }
+     ],
+     "lyric": null,
+     "melisma": true
+    }
+   ],
+   "marks": [
+    {
+     "type": "bar",
+     "cell": 0
+    },
+    {
+     "type": "vibhag",
+     "cell": 3
+    },
+    {
+     "type": "section_bar",
+     "cell": 6
+    },
+    {
+     "type": "section_bar",
+     "cell": 6
+    }
+   ]
+  }
+ ],
+ "provenance": {
+  "primary_witness": {
+   "archive": "SNLTR Rabindra Rachanabali digital edition (digitization of Swarabitan, Visva-Bharati)",
+   "url": "https://rabindra-rachanabali.nltr.org/node/16053?gaan=ক্লান্তি আমার ক্ষমা করো প্রভু.xml",
+   "retrieved": "2026-09-02",
+   "taal_as_stated": "দাদরা"
+  },
+  "scan_verification": null,
+  "secondary_witnesses": [],
+  "encoding_method": "automated parse of the witness's notation grid (tools/parse_nltr.py) + manual review of every line",
+  "known_deviations": []
+ },
+ "confidence": {
+  "level": "high",
+  "notes": [
+   "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+  ]
+ }
+}

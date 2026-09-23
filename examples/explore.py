@@ -100,10 +100,11 @@ def q4_phrases(songs):
             shape = tuple(v - vals[i] for v in vals[i:i + 4])
             seen.setdefault(shape, {"songs": set(), "example": " ".join(names[i:i + 4])})
             seen[shape]["songs"].add(doc["id"])
+    threshold = max(3, int(len(songs) * 0.6))
     shared = sorted(((len(v["songs"]), v["example"], shape) for shape, v in seen.items()
-                     if len(v["songs"]) >= 6), reverse=True)[:6]
+                     if len(v["songs"]) >= threshold), reverse=True)[:6]
     for count, example, shape in shared:
-        print(f"   in {count:2d}/10 songs   e.g. {example:22s} intervals {shape}")
+        print(f"   in {count:2d}/{len(songs)} songs   e.g. {example:22s} intervals {shape}")
 
 
 def q5_melisma(songs):

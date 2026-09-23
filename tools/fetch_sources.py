@@ -29,7 +29,7 @@ OUT = ROOT / "sources" / "raw"
 DELAY_SECONDS = 2
 USER_AGENT = (
     "tagore-swaralipi/0.1 (open research corpus; "
-    "https://github.com/NeelVerse-Lab/tagore-swaralipi)"
+    "https://github.com/indranilbanerjee/tagore-swaralipi)"
 )
 
 

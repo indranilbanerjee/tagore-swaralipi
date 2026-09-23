@@ -1,15 +1,25 @@
 # Verification record
 
 This corpus was encoded from an online archive. That is a reasonable place to start and a bad
-place to stop, because an archive can be wrong and you would never know. So: three of the ten
-songs have now been checked, matra by matra, against scans of the **printed Swarabitan** —
-Visva-Bharati's own edition, the source every other witness is downstream of.
+place to stop, because an archive can be wrong and you would never know. So: three songs have been
+checked, matra by matra, against scans of the **printed Swarabitan** — Visva-Bharati's own edition,
+the source every other witness is downstream of.
 
 This document records what was checked, what matched, what didn't, and what changed as a result.
 It is written so that you can repeat it rather than trust it.
 
-**Status: 3 of 10 songs scan-verified** (v0.1). The remaining seven are archive-derived and say so
-in their `confidence` block.
+**Status: 3 of 30 songs scan-verified.** The rest are archive-derived and say so in their
+`confidence` block.
+
+That ratio got worse in v0.2, and it is worth being blunt about why. Once the pipeline existed,
+adding twenty songs cost a day; verifying one song against print costs an evening of careful human
+reading and cannot be automated. So the corpus grew and the verified fraction fell from 30% to 10%.
+
+Growth was still worth it — the twenty new songs took the corpus from 6 taal families to 20, and
+two of them exposed a real gap in the decoder (see [DECODING.md](DECODING.md)). But the honest
+statement of where this project stands is: **the data is broad and thinly verified, and the
+bottleneck is human eyes on printed pages.** Closing that is what v0.3 is for, and it is the one
+job where a reader of swaralipi is worth more than any amount of tooling.
 
 ---
 
@@ -119,10 +129,12 @@ four matras, i.e. two kaharba cycles to the printed line, exactly as the corpus 
 
 ## What is still unverified
 
-Seven songs — ফুলে ফুলে ঢ'লে ঢ'লে, আনন্দলোকে মঙ্গলালোকে, একলা চলো রে, আগুনের পরশমণি,
-তুমি রবে নীরবে, মাঝে মাঝে তব দেখা পাই, এসো শ্যামল সুন্দর — remain checked only against the
-online witness, cross-source metadata, and the raga-signature test in
-[`DECODING.md`](DECODING.md). Their volumes are known, so the work is well-defined:
+Twenty-seven songs remain checked only against the online witness, cross-source metadata, the
+raga-signature test in [`DECODING.md`](DECODING.md), and — new in v0.2 — a test that the taal we
+assign agrees with the cycle the page prints.
+
+For the seven remaining from v0.1 the Swarabitan volumes are already identified, so that work is
+entirely well-defined:
 
 | Song | Swarabitan vol. | Scan |
 |---|---|---|
@@ -134,8 +146,24 @@ online witness, cross-source metadata, and the raga-signature test in
 | মাঝে মাঝে তব দেখা পাই | 23 | `in.ernet.dli.2015.339531` |
 | এসো শ্যামল সুন্দর | 54 | `in.ernet.dli.2015.339549` |
 
-If you read swaralipi, taking any one row of that table is the most useful contribution available
-to this project — see [CONTRIBUTING.md](../CONTRIBUTING.md).
+For the twenty songs added in v0.2 the volumes are not yet identified; finding them is itself a
+useful contribution, and `sources/catalogue.json` plus the Swarabitan index
+(`in.ernet.dli.2015.340247`) is where to start.
+
+If you read swaralipi, taking any one song is the most useful contribution available to this
+project — see [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+### Two things v0.2 found without a printed page
+
+Neither needed a scan, and both are recorded in the data:
+
+- **A missing swara.** Two new songs used a token the decoder did not know. Positional analysis
+  identified it as komal Re — the one swara variant the v0.1 table lacked. None of the published
+  ten used it, so that release is unaffected.
+- **A taal we had wrong.** ঝম্পক was entered as ten matras from Hindustani Jhaptaal; every page
+  printed its bars every five cells. Rabindrasangeet has its own taal system, and the notation was
+  right. There is now a test asserting that the assigned taal matches the printed cycle, so this
+  class of error cannot recur silently.
 
 ### One known open question
 

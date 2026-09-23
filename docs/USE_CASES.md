@@ -1,8 +1,8 @@
 # What this data is for
 
 A dataset is only as good as the questions it lets you ask. This page is about what becomes
-possible once Rabindrasangeet notation is data — some of it demonstrated here on ten songs, most
-of it waiting on a bigger corpus.
+possible once Rabindrasangeet notation is data — some of it demonstrated here on thirty songs,
+most of it waiting on a bigger corpus.
 
 Everything in the first section is real output from
 [`examples/explore.py`](../examples/explore.py), which you can run in ten seconds with no
@@ -18,27 +18,29 @@ Sam — the first beat of the taal cycle — is the anchor the whole rhythm hang
 taal-bound songs in this corpus:
 
 ```
-P     73  27.7%  ████████
-S     39  14.8%  ████
-G     34  12.9%  ████
-M     32  12.1%  ████
-D     25   9.5%  ███
-S'    25   9.5%  ███
+P    214  21.6%  ██████
+M    133  13.4%  ████
+S    120  12.1%  ████
+G    116  11.7%  ████
+S'    97   9.8%  ███
+D     81   8.2%  ██
 ```
 
-Pa, not Sa, is the most common note at sam — nearly twice as often as the tonic. That is a
-concrete stylistic claim about how these songs are built, and until now nobody could have made it
-without reading sixty volumes by hand and counting. (On ten songs it is a hint, not a finding.
-On five hundred it would be a paper.)
+Pa, not Sa, is the most common note at sam — nearly twice as often as the tonic. **This finding
+survived the corpus tripling**, which is what makes it worth reporting: measured on ten songs Pa
+led with 27.7%, and on thirty it still leads with 21.6% while Sa sits at 12.1%. A number that holds
+when the sample changes is starting to be about the music rather than about the sample. (On five
+hundred songs it would be a paper.)
 
 ### Which phrases recur across different songs?
 
 Reducing every four-note run to its interval shape, so the comparison is key-independent:
 
 ```
-in  9/10 songs   e.g. P M P M      intervals (0, -2, 0, -2)
-in  8/10 songs   e.g. S' N D N     intervals (0, -1, -3, -1)
-in  8/10 songs   e.g. R' S' N D    intervals (0, -2, -3, -5)
+in 27/30 songs   e.g. G G G G      intervals (0, 0, 0, 0)
+in 25/30 songs   e.g. D P D P      intervals (0, -2, 0, -2)
+in 23/30 songs   e.g. S' N D N     intervals (0, -1, -3, -1)
+in 23/30 songs   e.g. D P M G      intervals (0, -2, -4, -5)
 ```
 
 This is the beginning of a **phrase vocabulary** for the tradition — the shared building blocks a
@@ -50,12 +52,13 @@ account of Rabindrasangeet's melodic grammar, derived rather than asserted.
 The proportion of matras where a syllable is still sounding rather than a new one beginning:
 
 ```
+e-parabase-rabe-ke-hay             65.3%
 gram-chhara-oi-ranga-matir-path    53.0%
 tumi-robe-nirobe                   38.5%
-majhe-majhe-tobo-dekha-pai         14.9%
+bipade-more-rokkha-koro            11.2%
 ```
 
-A three-and-a-half-fold spread. Word-setting density turns out to be a measurable stylistic
+Nearly a six-fold spread. Word-setting density turns out to be a measurable stylistic
 dimension, and it separates the songs in ways that don't line up neatly with taal or parjaay —
 which is itself interesting, and worth a real study.
 
@@ -70,6 +73,7 @@ song *actually* uses, and check it against what tradition says:
 | এসো শ্যামল সুন্দর | both Ni forms, no komal Ga | **Desh** |
 | মাঝে মাঝে তব দেখা পাই | mixed g/G and n/N | **Jhinjhoti**-anga |
 | পুরানো সেই দিনের কথা | 94.1% pentatonic S R G P D; the rest 7 Ni + 1 Ma | **Mishra Bhupali** |
+| গভীর রজনী নামিল হৃদয়ে | komal Re, Ga, Dha and Ni together | **Bhairavi**-anga — and the song that exposed a missing swara in our decoder |
 
 That last row is the sharpest. *Bhupali* is the pentatonic; *mishra* means *mixed*. The data shows
 a pentatonic frame with a 6% admixture — exactly what the name claims — and we measured it before
@@ -111,7 +115,7 @@ Concretely, symbolic data unlocks:
   a first probe.
 - **Style transfer that respects taal**, rather than treating Indian music as Western music with
   unusual scales.
-- **Low-resource symbolic music research.** Ten songs is a *feature* for this line of work: it is
+- **Low-resource symbolic music research.** A corpus this small is a *feature* for this line of work: it is
   a natural testbed for how much musical grammar can be learned from very little, which matters
   for every under-documented tradition, not just this one.
 - **Training data with clean provenance.** Every note here traces to a cited public-domain source.
@@ -174,10 +178,11 @@ domain in 2002. This is one of the great song repertoires of the world, and ther
 holder standing between it and open scholarship. That is not true of most twentieth-century music,
 and it makes this a rare opportunity rather than an ordinary one.
 
-**Because ten songs proves the hard part.** The schema handles the awkward cases — free rhythm,
+**Because thirty songs proves the hard part.** The schema handles the awkward cases — free rhythm,
 three-note matras, grace notes, komal and kori as distinct letters, Bengali syllable alignment.
-The pipeline is reproducible end to end. The remaining work is real but it is no longer *research*;
-it is careful, checkable effort that many hands can share. That is the point at which a project
+The pipeline is reproducible end to end. Twenty more songs were added in a day once it existed, spanning taals no Western format can hold.
+The remaining work is real but it is no longer *research*; it is careful, checkable effort that
+many hands can share — and the binding constraint is now verification, not encoding. That is the point at which a project
 stops being one person's and becomes a community's.
 
 ---

@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 from render_text import render  # noqa: E402
 
-REPO = "https://github.com/NeelVerse-Lab/tagore-swaralipi"
+REPO = "https://github.com/indranilbanerjee/tagore-swaralipi"
 
 
 def excerpt(doc, lines=4):
@@ -117,8 +117,8 @@ def build():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ten Songs of Tagore, In Data — listen</title>
-<meta name="description" content="Ten Rabindrasangeet digitized from akarmatrik swaralipi into open symbolic notation. Every recording here is synthesized from the notation itself.">
+<title>Songs of Tagore, In Data — listen</title>
+<meta name="description" content="Thirty Rabindrasangeet digitized from akarmatrik swaralipi into open symbolic notation. Every recording here is synthesized from the notation itself.">
 <style>{CSS}</style>
 <script type="application/ld+json">{jsonld}</script>
 </head>
@@ -126,9 +126,9 @@ def build():
 <div class="wrap">
 
 <header class="top">
-  <h1><span class="bn">দশটি গান, ডেটায়</span>Ten Songs of Tagore, In Data</h1>
-  <p class="lede">Ten Rabindrasangeet encoded from akarmatrik swaralipi into open symbolic
-  notation. <strong>Nothing on this page is a recording.</strong> Every note you hear was
+  <h1><span class="bn">গান, ডেটায়</span>Songs of Tagore, In Data</h1>
+  <p class="lede">Thirty Rabindrasangeet encoded from akarmatrik swaralipi into open symbolic
+  notation, across twenty taal families. <strong>Nothing on this page is a recording.</strong> Every note you hear was
   synthesized directly from the data — so if a song sounds right, the digitization is right,
   and if a phrase sounds wrong, you have found a bug worth reporting.</p>
   <p class="lede"><a href="method.html"><strong>How it was made →</strong></a> an interactive

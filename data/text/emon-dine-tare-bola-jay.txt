@@ -1,0 +1,58 @@
+# এমন দিনে তারে বলা যায়  (Emon dine tare bola jay)
+# taal: talamukta (free rhythm)
+
+[sthayi]
+D  P/D  M
+·  ·    ·
+M  M  M  G   R   G   S   R  R/M  M   -  -  -  -/G/M
+এ  ম  ন  দি  নে  তা  রে  ব  লা৹  যা  ৹  ৹  ৹  ৹য়্  
+R  M  M  P  P  P/D  -   n  D   n   -  -  -  - 
+এ  ম  ন  ঘ  ন  ঘো৹  র্  ব  রি  ষা  ৹  ৹  ৹  য়্
+D  P/D  M  G/M  R   G  R/S  R   G/M/P  M/P/M/G  -/M  -  -  -/G/M/G
+এ  ম৹   ন  দি৹  নে  ম  ন৹   খো  লা৹৹   যা৹৹৹    ৹    ৹  ৹  ৹৹য়্   
+R  M  M  P   P  P    D/P  M   P  P  N  N   S'  S'
+এ  ম  ন  মে  ঘ  স্ব  রে৹  বা  দ  ল  ঝ  রো  ঝ   রে
+N  S'/R'  S'  n   n/D  P  D/P  M  D/n/D  P/D/P  -  -  -  - 
+ত  প৹     ন   হী  ন৹   ঘ  ন৹   ত  ম৹৹    সা৹৹   ৹  ৹  ৹  য়্
+- 
+য়্
+S   S  S   S   S   S   S   S   N,/S/R  R  -  -  -  - 
+সে  ক  থা  শু  নি  বে  না  কে  হ৹৹     আ  ৹  ৹  ৹  র্
+R   R   R  R   -   N,  S  R   S/R/G  G   -  -  -  - 
+নি  ভৃ  ত  নি  র্  জ   ন  চা  রি৹৹   ধা  ৹  ৹  ৹  র্
+G   G  G/M  M   P   P   D/P  M  P   P  D   D   n   n/D
+দু  জ  নে৹  মু  খো  মু  খি৹  গ  ভী  র  দু  খে  দু  খি৹
+P  D   P   M  M/G  R  G/R  S  G/M/G  R/G/R  -  -  -  - 
+আ  কা  শে  জ  ল৹   ঝ  রে৹  অ  নি৹৹   বা৹৹   ৹  ৹  ৹  র্
+G  R/G/R  S   S   S  N,  N,/S  D,/N,  D,/N,/S  S  -  -  -  - 
+জ  গ৹৹    তে  কে  হ  যে  ন৹    না৹    হি৹৹     আ  ৹  ৹  ৹  র্
+M  P   P/S'  N  -   N   N  N/S'  D/N/S'  S'  -  -  -  - 
+স  মা  জ৹    স  ঙ্  সা  র  মি৹   ছে৹৹    স   ৹  ৹  ৹  ব্
+(N)S'  S'  S'  S'  S'  S'  S'  N/S'  N/S'/R'  (S')R'  -  -  -  -/g'/R'
+মি     ছে  এ   জী  ব   নে  র   ক৹    ল৹৹      র       ৹  ৹  ৹  ৹ব্    
+S'  N/R'  S'  n   n/D  P   D/P  M   P/D  P  M   G/M/G  R   R 
+কে  ব৹    লি  আঁ  খি৹  দি  য়ে৹  আঁ  খি৹  র  সু  ধা৹৹   পি  য়ে
+R/P  M  M  G/M/G  R   G/R  S   R  R/M/G  R/G/R  -  -  -  - 
+হৃ৹  দ  য়  দি৹৹   য়ে  হৃ৹  দি  অ  নু৹৹   ভ৹৹    ৹  ৹  ৹  ব্
+G   R/G/R  S   S   S   N,  N,/S  D,/N,  -/D,/N,/S  S  -  -  -  - 
+আঁ  ধা৹৹   রে  মি  শে  গে  ছে৹   আ৹     ৹৹র্       স  ৹  ৹  ৹  ব্
+R   M   M   P  P  D  P/D  M    M   P   -  -  -  - 
+তা  হা  তে  এ  জ  গ  তে৹  ক্ষ  তি  কা  ৹  ৹  ৹  র্
+D   S'  N/S'  D   D   P  P/D/P  M  M/G  M/P/M/G  -/M  -  -  -/G/M/G
+না  মা  তে৹   পা  রি  য  দি৹৹   ম  নো৹  ভা৹৹৹    ৹    ৹  ৹  ৹৹র্   
+R     R/P  P  M  G/M/G  R  G/R  S  R/G  R/G  R   S/R  N,  S 
+শ্রা  ব৹   ণ  ব  রি৹৹   ষ  নে৹  এ  ক৹   দা৹  গৃ  হ৹   কো  ণে
+R   M  M   P  P   D  P/D  M   M   P   -  -  -  - 
+দু  ক  থা  ব  লি  য  দি৹  কা  ছে  তা  ৹  ৹  ৹  র্
+D   S'  N/S'  D  D/n/D  P   P   M   M/G  M/P/M/G  -/M  -  -  - 
+তা  হা  তে৹   আ  সে৹৹   যা  বে  কি  বা৹  কা৹৹৹    ৹    ৹  ৹  র্
+M     P   P/S'  N   N   N  N   N/S'  D/N/S'  S'  -  -  -  - 
+ব্যা  কু  ল৹    বে  গে  আ  জি  ব৹    হে৹৹    বা  ৹  ৹  ৹  য়্
+S'  S'  S'  S'  S'  S'  S'  N/S'  N/S'/R'  S'/R'  -  -  -  - 
+বি  জু  লি  থে  কে  থে  কে  চ৹    ম৹৹      কা৹    ৹  ৹  ৹  য়্
+S'  N/S'/R'  S'  n  n/D  P  D/P  M  P/D  P   M   M/G  R  R 
+যে  ক৹৹      থা  এ  জী৹  ব  নে৹  র  হি৹  য়া  গে  ল৹   ম  নে
+R/P  M  M   G/M/G  R   G/R  S  R  R/M/G  R/G/R  -  -  -  - 
+সে৹  ক  থা  আ৹৹    জি  যে৹  ন  ব  লা৹৹   যা৹৹   ৹  ৹  ৹  য়্
+R  M  M  P  P  M/P/D  -   n  D   n   -  -/D/n/S'  -/n/S'/n/D  -/n
+এ  ম  ন  ঘ  ন  ঘো৹৹   র্  ব  রি  ষা  ৹  ৹         ৹           য়্ 

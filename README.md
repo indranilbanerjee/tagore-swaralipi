@@ -1,12 +1,13 @@
-# দশটি গান, ডেটায় — Ten Songs of Tagore, In Data
+# গান, ডেটায় — Songs of Tagore, In Data
 
-[![Validate corpus](https://github.com/NeelVerse-Lab/tagore-swaralipi/actions/workflows/validate.yml/badge.svg)](https://github.com/NeelVerse-Lab/tagore-swaralipi/actions/workflows/validate.yml)
+[![Validate corpus](https://github.com/indranilbanerjee/tagore-swaralipi/actions/workflows/validate.yml/badge.svg)](https://github.com/indranilbanerjee/tagore-swaralipi/actions/workflows/validate.yml)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue.svg)](LICENSE)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
-[![Songs: 10](https://img.shields.io/badge/songs-10-orange.svg)](data/songs)
+[![Songs: 30](https://img.shields.io/badge/songs-30-orange.svg)](data/songs)
+[![Taals: 20](https://img.shields.io/badge/taal%20families-20-blueviolet.svg)](docs/DATASET_CARD.md)
 [![Schema: v0.1](https://img.shields.io/badge/schema-v0.1-lightgrey.svg)](schema/SCHEMA.md)
 
-**A micro-dataset of Rabindrasangeet swaralipi in machine-readable symbolic notation — to our knowledge, the first openly licensed one — plus one experiment: a frontier AI model composing a continuation of a Tagore song, in-grammar, with audio.**
+**An open dataset of Rabindrasangeet swaralipi in machine-readable symbolic notation — to our knowledge the first of its kind — now 30 songs across 20 taal families, plus one experiment: a frontier AI model composing a continuation of a Tagore song, in-grammar, with audio.**
 
 > **Can you read swaralipi?** You are who this project needs most, and you don't need to write a
 > line of code. See [how to verify a song](CONTRIBUTING.md#1-verify-a-song-against-the-printed-swarabitan) —
@@ -18,8 +19,8 @@ Rabindranath Tagore left behind roughly 2,200 songs, and — almost uniquely amo
 
 | Path | Contents |
 |---|---|
-| `data/songs/` | 10 songs in **Swaralipi-JSON** — the canonical, akarmatrik-faithful encoding (swara + saptak + matra-fraction + taal cycle + Bengali lyric alignment + provenance) |
-| `data/text/` | The same 10 songs as human-readable **sargam-text** (round-trip verified) |
+| `data/songs/` | 30 songs in **Swaralipi-JSON** — the canonical, akarmatrik-faithful encoding (swara + saptak + matra-fraction + taal cycle + Bengali lyric alignment + provenance) |
+| `data/text/` | The same 30 songs as human-readable **sargam-text** (round-trip verified) |
 | `derived/midi/`, `derived/musicxml/` | Auto-derived MIDI and MusicXML views (lossy by design; the JSON is canonical) |
 | `audio/` | Reference audio synthesized *purely from the notation* — no recordings involved |
 | `schema/` | `SCHEMA.md` (design rationale) and a JSON Schema validator |
@@ -27,44 +28,59 @@ Rabindranath Tagore left behind roughly 2,200 songs, and — almost uniquely amo
 | `docs/DECODING.md` | How the source archive's font-encoded notation was decoded, with the cross-source triangulation evidence |
 | `docs/DATASET_CARD.md` | Formal dataset card — coverage, intended uses, limitations, rights, prior art |
 | `docs/VERIFICATION.md` | What was checked against the printed Swarabitan, what matched, and what it corrected |
-| `docs/USE_CASES.md` | What this data makes possible — with real findings from the ten songs, and open research questions |
+| `docs/USE_CASES.md` | What this data makes possible — with real findings measured on the corpus, and open research questions |
 | `ROADMAP.md` | What v0.2 / v0.3 / v0.5 / v1.0 contain, what's **help wanted**, and what we've decided *not* to do |
 | `examples/` | Runnable exploration script — five questions answered over the corpus, no dependencies |
 | `experiment/` | **"Claude continues Tagore"** — a blind composition experiment with A/B audio ([writeup](experiment/EXPERIMENT.md)) |
-| `index.html` | The [listening page](https://neelverse-lab.github.io/tagore-swaralipi/) — notation beside audio, built by `tools/build_site.py` |
-| `method.html` | The [interactive methodology walkthrough](https://neelverse-lab.github.io/tagore-swaralipi/method.html) — decoder, pipeline, notation follower, blind listening test. Generated from the corpus by `tools/build_method_page.py` |
-| `tests/` | 126 integrity checks — schema, taal arithmetic, provenance, lossless round-trip. Run in CI on every PR |
+| `index.html` | The [listening page](https://indranilbanerjee.github.io/tagore-swaralipi/) — notation beside audio, built by `tools/build_site.py` |
+| `method.html` | The [interactive methodology walkthrough](https://indranilbanerjee.github.io/tagore-swaralipi/method.html) — decoder, pipeline, notation follower, blind listening test. Generated from the corpus by `tools/build_method_page.py` |
+| `sources/catalogue.json` | A map of **all 1,568 songs** in the witness archive that carry notation — taal, parjaay and URL for each. Built by `tools/discover_songs.py`; this is where the next songs come from |
+| `tests/` | 393 integrity checks — schema, taal arithmetic, provenance, lossless round-trip. Run in CI on every PR |
 
-## The ten songs
+## The songs
 
-| Song | Taal | Notes |
+30 songs, chosen so the corpus is a **structural sample of the tradition** rather than a
+list of favourites — 20 taal families, both bhanga gaan and Rabindrik taals, and songs
+people actually sing.
+
+| Taal | Matras | Songs |
 |---|---|---|
-| পুরানো সেই দিনের কথা | Ektaal (12) | Mishra Bhupali; bhanga gaan on "Auld Lang Syne" — **scan-verified** |
-| ফুলে ফুলে ঢ'লে ঢ'লে | Khemta (6) | Bhanga gaan on "Ye Banks and Braes" |
-| আনন্দলোকে মঙ্গলালোকে | Ektaal (12) | Brahmasangeet; uses kori Ma |
-| যদি তোর ডাক শুনে কেউ না আসে (একলা চলো রে) | Dadra (6) | Baul sur; komal Dha/Ni inflections |
-| আগুনের পরশমণি | Dadra (6) | Both Ma forms |
-| তুমি রবে নীরবে | Ektaal (12) | Behag; the M#-beside-P signature is visible in the data |
-| মাঝে মাঝে তব দেখা পাই | Ektaal (12) | Mixed Ga and Ni forms (Jhinjhoti-anga) |
-| ভালোবেসে সখী, নিভৃত যতনে | **Talamukta** (free) | Free rhythm, confirmed on the printed page — **scan-verified** |
-| এসো শ্যামল সুন্দর | Tintal (16) | Textbook Desh note-set in the data |
-| গ্রামছাড়া ওই রাঙা মাটির পথ | Kaharba (8) | বাংলা (Bangla) anga — **scan-verified** |
+| ektaal · একতাল | 12 | পুরানো সেই দিনের কথা · আনন্দলোকে · তুমি রবে নীরবে · মাঝে মাঝে তব দেখা পাই · আমি চিনি গো চিনি |
+| dadra · দাদরা | 6 | একলা চলো রে · আগুনের পরশমণি · আলো আমার আলো · ক্লান্তি আমার ক্ষমা করো · ভেঙে মোর ঘরের চাবি |
+| kaharba · কাহারবা | 8 | গ্রামছাড়া ওই রাঙা মাটির পথ · **জনগণমন-অধিনায়ক** |
+| tintal · তিনতাল | 16 | এসো শ্যামল সুন্দর |
+| khemta · খেমটা | 6 | ফুলে ফুলে ঢ'লে ঢ'লে |
+| **talamukta** · তালমুক্ত | free | ভালোবেসে সখী · এমন দিনে তারে বলা যায় |
+| teora · তেওড়া | 7 | আমার মাথা নত করে দাও |
+| jhanp · ঝাঁপ | 10 | বহে নিরন্তর অনন্ত আনন্দধারা |
+| jhampak · ঝম্পক | 5 | বিপদে মোরে রক্ষা করো |
+| sasthi · ষষ্ঠী | 6 | চিরবন্ধু চিরনির্ভর চিরশান্তি |
+| kawwali · কাওয়ালি | 8 | আজি যত তারা তব আকাশে |
+| dhamar · ধামার | 14 | হরষে জাগো আজি |
+| surfank · সুরফাঁক | 10 | প্রতিদিন তব গাথা গাব আমি |
+| chautal · চৌতাল | 12 | জাগিতে হবে রে |
+| ardha-jhanp · অর্দ্ধঝাঁপ | 5 | পথে চলে যেতে যেতে |
+| madhyaman · মধ্যমান | 16 | এ পরবাসে রবে কে হায় |
+| rupak · রুপক | 7 | আমার প্রাণে গভীর গোপন |
+| rupakra · রুপকড়া | 8 | গভীর রজনী নামিল হৃদয়ে |
+| arathheka · আড়াঠেকা | 16 | পথ চেয়ে যে কেটে গেল |
+| dadra, 5-matra setting | 5 | কৃষ্ণকলি আমি তারেই বলি *(taal conflict recorded — see its confidence notes)* |
 
-Four taal families, one free-rhythm song, three raga-angas, two Scottish borrowings: a deliberately diverse structural sample of the tradition.
+Twenty taal families, two free-rhythm songs, two bhanga gaan built on Scottish airs, and the Indian national anthem. The rare Rabindrik taals — ঝম্পক, ষষ্ঠী, রূপকড়া, সুরফাঁক — matter more than they look: they are the ones no Western-derived format can hold, and the ones a corpus of famous songs alone would miss entirely.
 
 ## Why a *symbolic* dataset matters
 
 Audio corpora of Rabindrasangeet exist. But audio entangles the composition with a performance. The swaralipi is the composition itself — what Tagore (via his notators: Jyotirindranath Tagore, Dinendranath Tagore, Indira Devi Chaudhurani and others) fixed on the page. Symbolic data is what lets you ask: *what are the grammar rules of this music?* Which taals carry which cadence idioms? How does a Behag song treat kori Ma? What did Tagore change when he took a pentatonic Scots tune into ektaal? Every one of those questions becomes a query over this JSON.
 
-And for the machine-learning era there is a sharper reason: **models learn the grammar of what they can read.** Western music has centuries of digitized scores; Rabindrasangeet has essentially none. A tradition absent from the data is absent from the models. This micro-dataset is 10 songs — 0.5% of the songbook — released to prove the pipeline and the schema, and to invite the community to scale it.
+And for the machine-learning era there is a sharper reason: **models learn the grammar of what they can read.** Western music has centuries of digitized scores; Rabindrasangeet has essentially none. A tradition absent from the data is absent from the models. This dataset is 30 songs — about 1.4% of the songbook. The witness archive carries notation for **1,568** of them (`sources/catalogue.json`), so the ceiling is not the data; it is the verification.
 
 
 ## Listen — every note here is synthesized from the notation
 
-**🎧 [Open the listening page](https://neelverse-lab.github.io/tagore-swaralipi/)** — all ten songs with players, each next to the swaralipi
+**🎧 [Open the listening page](https://indranilbanerjee.github.io/tagore-swaralipi/)** — all thirty songs with players, each next to the swaralipi
 the audio is made from, plus the AI experiment side by side.
 
-**🛠 [How it was made — interactive walkthrough](https://neelverse-lab.github.io/tagore-swaralipi/method.html)** —
+**🛠 [How it was made — interactive walkthrough](https://indranilbanerjee.github.io/tagore-swaralipi/method.html)** —
 the source, the token decoding (click any token to see what it means and how we know), the
 five-stage pipeline, the verification against printed Swarabitan, and the experiment as a blind
 listening test. Its centrepiece is a **notation follower**: press play and the current matra lights
@@ -77,13 +93,13 @@ phrase sounds wrong, you have found a bug worth [reporting](../../issues/new?tem
 
 | | Listen | Read the notation |
 |---|---|---|
-| পুরানো সেই দিনের কথা — *ektaal, Mishra Bhupali* | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/audio/purano-sei-diner-katha.mp3) | [sargam-text](data/text/purano-sei-diner-katha.txt) |
-| যদি তোর ডাক শুনে (একলা চলো রে) — *dadra, Baul sur* | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/audio/ekla-chalo-re.mp3) | [sargam-text](data/text/ekla-chalo-re.txt) |
-| তুমি রবে নীরবে — *ektaal, Behag* | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/audio/tumi-robe-nirobe.mp3) | [sargam-text](data/text/tumi-robe-nirobe.txt) |
-| ভালোবেসে সখী — *talamukta (free rhythm)* | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/audio/bhalobese-sokhi.mp3) | [sargam-text](data/text/bhalobese-sokhi.txt) |
-| এসো শ্যামল সুন্দর — *tintal, Desh* | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/audio/esho-shyamalo-sundoro.mp3) | [sargam-text](data/text/esho-shyamalo-sundoro.txt) |
+| পুরানো সেই দিনের কথা — *ektaal, Mishra Bhupali* | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/audio/purano-sei-diner-katha.mp3) | [sargam-text](data/text/purano-sei-diner-katha.txt) |
+| যদি তোর ডাক শুনে (একলা চলো রে) — *dadra, Baul sur* | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/audio/ekla-chalo-re.mp3) | [sargam-text](data/text/ekla-chalo-re.txt) |
+| তুমি রবে নীরবে — *ektaal, Behag* | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/audio/tumi-robe-nirobe.mp3) | [sargam-text](data/text/tumi-robe-nirobe.txt) |
+| ভালোবেসে সখী — *talamukta (free rhythm)* | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/audio/bhalobese-sokhi.mp3) | [sargam-text](data/text/bhalobese-sokhi.txt) |
+| এসো শ্যামল সুন্দর — *tintal, Desh* | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/audio/esho-shyamalo-sundoro.mp3) | [sargam-text](data/text/esho-shyamalo-sundoro.txt) |
 
-*(all ten are in [`audio/`](audio) — the five above are a spread across the taal families)*
+*(all thirty are in [`audio/`](audio) — the five above are a spread across the taal families)*
 
 ### The experiment, A/B
 
@@ -91,8 +107,8 @@ Same sthayi, same synthesizer, same tonic. The only difference is who wrote the 
 
 | | |
 |---|---|
-| **Tagore's antara** | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/experiment/purano_real_sthayi_antara.mp3) |
-| **Claude's antara**, composed blind | [▶ play](https://raw.githubusercontent.com/NeelVerse-Lab/tagore-swaralipi/main/experiment/purano_claude_continuation.mp3) |
+| **Tagore's antara** | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/experiment/purano_real_sthayi_antara.mp3) |
+| **Claude's antara**, composed blind | [▶ play](https://raw.githubusercontent.com/indranilbanerjee/tagore-swaralipi/main/experiment/purano_claude_continuation.mp3) |
 
 Could you pick which is his? The [writeup](experiment/EXPERIMENT.md) explains what the model got
 right — and the one thing it got conventionally, where Tagore did not.
@@ -102,11 +118,13 @@ right — and the one thing it got conventionally, where Tagore did not.
 
 Once notation is data, questions that needed sixty volumes and a lifetime become a few lines of
 Python. Run [`examples/explore.py`](examples/explore.py) — no dependencies, ten seconds — and it
-will tell you, among other things, that **Pa sits on sam nearly twice as often as Sa** across this
-corpus, that a handful of four-note interval shapes recur in 8–9 of the ten songs, and that
-melisma density ranges from 15% to 53% of matras between songs.
+will tell you, among other things, that **Pa sits on sam nearly twice as often as Sa** (21.6% against
+12.1%) across this corpus, that a handful of four-note interval shapes recur in 23–27 of the thirty
+songs, and that melisma density ranges from 11% to 65% of matras between songs.
 
-Those are hints on ten songs. On five hundred they would be findings. The gap between those two
+Those are hints on thirty songs — and they held when the corpus tripled, which is the first weak
+evidence that they are about the tradition and not about the sample. On five hundred they would be
+findings. The gap between those two
 sentences is what this project is for.
 
 [`docs/USE_CASES.md`](docs/USE_CASES.md) lays out the rest: comparative analysis of Tagore's
@@ -137,13 +155,13 @@ python tools/to_musicxml.py      # -> derived/musicxml
 python tools/synth.py            # -> audio (needs ffmpeg)
 python tools/build_site.py       # -> index.html (listening page)
 python tools/build_method_page.py # -> method.html (interactive walkthrough)
-python -m pytest tests/ -v       # 126 integrity checks
+python -m pytest tests/ -v       # 393 integrity checks
 ```
 
 
 ## How much of this is verified
 
-Three of the ten songs have been checked **matra by matra against scans of the printed
+Three of the thirty songs have been checked **matra by matra against scans of the printed
 Swarabitan**, not just against the online archive they were encoded from. That check is written up
 in [`docs/VERIFICATION.md`](docs/VERIFICATION.md) with the volume, page and scan URL for each, so
 you can repeat it rather than trust it. What it produced:
@@ -163,9 +181,9 @@ you can repeat it rather than trust it. What it produced:
   (grace-note) encoding: where we mark a kan, the print sets that swara as a smaller raised
   glyph — the akarmatrik convention. A guess became evidence.
 
-The other seven songs remain archive-derived and their `confidence` blocks say so. Their volume
-numbers are listed in the verification doc, so the remaining work is well-defined and anyone who
-reads swaralipi can take a row.
+The other twenty-seven remain archive-derived and their `confidence` blocks say so — that ratio
+is the honest cost of growing the corpus, and closing it is what v0.3 is for. Volume numbers for
+the original seven are already published, so anyone who reads swaralipi can take a row.
 
 ## Contributing
 

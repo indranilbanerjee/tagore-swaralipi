@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ten Songs of Tagore, In Data — listen</title>
-<meta name="description" content="Ten Rabindrasangeet digitized from akarmatrik swaralipi into open symbolic notation. Every recording here is synthesized from the notation itself.">
+<title>Songs of Tagore, In Data — listen</title>
+<meta name="description" content="Thirty Rabindrasangeet digitized from akarmatrik swaralipi into open symbolic notation. Every recording here is synthesized from the notation itself.">
 <style>
 :root{--bg:#faf8f5;--ink:#1c1a17;--muted:#6b635a;--line:#e2dcd3;--accent:#8c3b1b;--ok:#2f6b45}
 *{box-sizing:border-box}
@@ -42,14 +42,14 @@ footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);color:v
 <script type="application/ld+json">{
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "name": "Ten Songs of Tagore, In Data (Swaralipi Corpus)",
-  "alternateName": "দশটি গান, ডেটায়",
-  "description": "Ten Rabindrasangeet digitized from akarmatrik swaralipi into an open symbolic notation format — swara, saptak, matra-fraction timing, taal cycles, and Bengali lyric alignment — with derived MIDI and MusicXML, notation-synthesized audio, per-song provenance, and a blind AI-continuation experiment. To our knowledge the first openly licensed machine-readable corpus of Rabindrasangeet notation.",
-  "url": "https://github.com/NeelVerse-Lab/tagore-swaralipi",
-  "sameAs": "https://neelverse-lab.github.io/tagore-swaralipi/",
+  "name": "Songs of Tagore, In Data (Swaralipi Corpus)",
+  "alternateName": "গান, ডেটায়",
+  "description": "Thirty Rabindrasangeet digitized from akarmatrik swaralipi into an open symbolic notation format — swara, saptak, matra-fraction timing, taal cycles across twenty taal families, and Bengali lyric alignment — with derived MIDI and MusicXML, notation-synthesized audio, per-song provenance and confidence, and a blind AI-continuation experiment. To our knowledge the first openly licensed machine-readable corpus of Rabindrasangeet notation.",
+  "url": "https://github.com/indranilbanerjee/tagore-swaralipi",
+  "sameAs": "https://indranilbanerjee.github.io/tagore-swaralipi/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "version": "0.1.0",
-  "datePublished": "2026-08-11",
+  "version": "0.2.0",
+  "datePublished": "2026-09-02",
   "inLanguage": [
     "bn",
     "en"
@@ -85,41 +85,41 @@ footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);color:v
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/data/songs"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/data/songs"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "audio/midi",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/derived/midi"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/derived/midi"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "application/vnd.recordare.musicxml+xml",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/derived/musicxml"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/derived/musicxml"
     }
   ],
-  "measurementTechnique": "Re-encoded from the SNLTR digital edition of Swarabitan; three songs additionally verified matra-by-matra against scans of the printed Swarabitan (Visva-Bharati)."
+  "measurementTechnique": "Re-encoded from the SNLTR digital edition of Swarabitan; three songs additionally verified matra-by-matra against scans of the printed Swarabitan (Visva-Bharati). Taal assignments are cross-checked against the bar structure printed in the notation itself."
 }</script>
 </head>
 <body>
 <div class="wrap">
 
 <header class="top">
-  <h1><span class="bn">দশটি গান, ডেটায়</span>Ten Songs of Tagore, In Data</h1>
-  <p class="lede">Ten Rabindrasangeet encoded from akarmatrik swaralipi into open symbolic
-  notation. <strong>Nothing on this page is a recording.</strong> Every note you hear was
+  <h1><span class="bn">গান, ডেটায়</span>Songs of Tagore, In Data</h1>
+  <p class="lede">Thirty Rabindrasangeet encoded from akarmatrik swaralipi into open symbolic
+  notation, across twenty taal families. <strong>Nothing on this page is a recording.</strong> Every note you hear was
   synthesized directly from the data — so if a song sounds right, the digitization is right,
   and if a phrase sounds wrong, you have found a bug worth reporting.</p>
   <p class="lede"><a href="method.html"><strong>How it was made →</strong></a> an interactive
   walkthrough: the source, the decoding, the pipeline, the verification, and the experiment —
   with the notation following the audio as it plays.</p>
-  <p class="lede"><a href="https://github.com/NeelVerse-Lab/tagore-swaralipi">Repository</a> ·
-  <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/docs/VERIFICATION.md">Verification record</a> ·
-  <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/CONTRIBUTING.md">How to contribute</a></p>
+  <p class="lede"><a href="https://github.com/indranilbanerjee/tagore-swaralipi">Repository</a> ·
+  <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/docs/VERIFICATION.md">Verification record</a> ·
+  <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/CONTRIBUTING.md">How to contribute</a></p>
 </header>
 
 <h2>The corpus</h2>
-<p class="sub">10 songs · 3 checked line-by-line against scans of the printed
+<p class="sub">30 songs · 3 checked line-by-line against scans of the printed
 Swarabitan. Open “see the notation” on any song to read the swaralipi the audio is made from.</p>
 
 
@@ -146,10 +146,160 @@ M   -  M  |  M   M  -   |  (M)G  -   P  |  M  G   -
 ৹  ৹  এ  |  জী  ব  ন্  |  পু    ণ্  ণ  |  ক  রো  ৹</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/aguner-poroshmoni.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/aguner-poroshmoni.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/aguner-poroshmoni.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/aguner-poroshmoni.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/aguner-poroshmoni.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/aguner-poroshmoni.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/aguner-poroshmoni.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/aguner-poroshmoni.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>আজি যত তারা তব আকাশে</h3>
+        <p class="translit">Aji jato tara tabo akashe</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>kawwali · 8 matras · vibhags 4+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/aji-jato-tara-tabo-akashe.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>G  M 
+আ  জি
+P  S&#x27;  (S&#x27;)n  -/-  |  P/D  -/n/D  P  M  |  G  -/S  G   -  |  M   -  M  M 
+য  ত   তা     ৹    |  রা৹  ৹      ত  ব  |  আ  ৹    কা  ৹  |  শে  ৹  স  বে
+M   -  -/G/M/P  P  |  P     P  P  P   |  P    -/D  P/D  -/n  |  D   -  G   M  
+মো  ৹  ৹        র  |  প্রা  ণ  ভ  রি  |  প্র  ৹    কা৹  ৹    |  শে  ৹  &quot;আ  জি&quot;
+-  -
+·  ·</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/aji-jato-tara-tabo-akashe.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/aji-jato-tara-tabo-akashe.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/aji-jato-tara-tabo-akashe.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/aji-jato-tara-tabo-akashe.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>আলো আমার আলো</h3>
+        <p class="translit">Alo amar alo</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>dadra · 6 matras · vibhags 3+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/alo-amar-alo.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S  S   -  |  S/N,  S   -   |  R  R   -  |  S  R   -
+আ  লো  ৹  |  আ৹    মা  র্  |  আ  লো  ৹  |  ও  গো  ৹
+G  G   -  |  M   P  -   |  D  N   -  |  -  -  -
+আ  লো  ৹  |  ভু  ব  ন্  |  ভ  রা  ৹  |  ৹  ৹  ৹
+(N)D  N   -  |  (N)S&#x27;  (S&#x27;)N  -   |  (N)D  P   -/D/P  |  (P)M  G   -/M
+আ     লো  ৹  |  ন      য়      ন্  |  ধোও   য়া  ৹      |  আ     মা  র্ 
+(R)G  R   -  |  G   G  -/P  |  (P)M  G   -  |  -  -  -
+আ     লো  ৹  |  হৃ  দ  য়্   |  হ     রা  ৹  |  ৹  ৹  ৹</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/alo-amar-alo.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/alo-amar-alo.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/alo-amar-alo.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/alo-amar-alo.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>আমার মাথা নত করে দাও</h3>
+        <p class="translit">Amar matha nato kore dao</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>teora · 7 matras · vibhags 3+2+2</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/amar-matha-nato-kore.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S  -  S   |  - 
+আ  ৹  মা  |  র্
+S   S&#x27;  N  |  D  -  |  P  P   |  P/M#  -/D  P   |  M#/-  -/P  |  G   - 
+মা  থা  ন  |  ত  ৹  |  ক  রে  |  দা৹   ও    হে  |  তো    ৹    |  মা  র্
+R  G  R  |  G   -  |  M   M  |  G  -  -/R  |  S   -/N,  |  -/(R)S  -
+চ  র  ণ  |  ধু  ৹  |  লা  র  |  ত  ৹  ৹    |  লে  ৹     |  ৹       ৹
+S  R  R  |  S/R  -/G  |  G  -   |  G   -   G   |  (G)P  -  |  R   - 
+স  ক  ল  |  অ৹   ৹    |  হ  ঙ্  |  কা  র্  হে  |  আ     ৹  |  মা  র্</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/amar-matha-nato-kore.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/amar-matha-nato-kore.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/amar-matha-nato-kore.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/amar-matha-nato-kore.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>আমার প্রাণে গভীর গোপন</h3>
+        <p class="translit">Amar prane gabhir gopon</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>rupak · 7 matras · vibhags 3+2+2</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/amar-prane-gabhir-gopon.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>M  P   P  |  P     -/M  |  P   -/M  |  M/n  D   n  |  D   -  |  P  - 
+আ  মা  র  |  প্রা  ৹    |  ণে  ৹    |  গ৹   ভী  র  |  গো  ৹  |  প  ন্
+S  S   -  |  R  -  |  R  P  |  (P)M  -/R  -  |  S   -  |  -  -
+ম  হা  ৹  |  আ  ৹  |  প  ন  |  সে    ৹    ৹  |  কী  ৹  |  ৹  ৹
+M  -/P  P  |  P   -/M  |  P   -  |  P/R&#x27;  R&#x27;  -/g&#x27;  |  R&#x27;  -  |  S&#x27;  -
+অ  ন্   ধ  |  কা  ৹    |  রে  ৹  |  হ৹    ঠা  ৎ     |  তা  ৹  |  রে  ৹
+N,  -  -  |  S   -  |  -  -  |  N,  S   -  |  R  -  |  R  P
+দে  ৹  ৹  |  খি  ৹  |  ৹  ৹  |  ম   হা  ৹  |  আ  ৹  |  প  ন</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/amar-prane-gabhir-gopon.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/amar-prane-gabhir-gopon.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/amar-prane-gabhir-gopon.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/amar-prane-gabhir-gopon.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>আমি চিনি গো চিনি তোমারে</h3>
+        <p class="translit">Ami chini go chini tomare</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>ektaal · 12 matras · vibhags 3+3+3+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/ami-chini-go-chini.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S  R 
+আ  মি
+G   G   G   |  G   G   G    |  G/M  -/G/P  -/M/G  |  (G)R  -  R
+চি  নি  গো  |  চি  নো  তো৹  |  মা৹  ৹      ৹      |  রে    ৹  ও
+R   G  (G)R  |  R   -/P  (P)M#  |  (D)P  -  -  |  -  G   M 
+গো  ৹  বি    |  দে  ৹    শি     |  নী    ৹  ৹  |  ৹  তু  মি
+P   -  (P)S&#x27;  |  (S&#x27;)N  -/R&#x27;  (R&#x27;)S&#x27;  |  (S&#x27;)D  -/(S&#x27;)n  -/D  |  P   -  S
+থা  ৹  ক      |  সি     ন্    ধু      |  পা     ৹        ৹    |  রে  ৹  ও</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/ami-chini-go-chini.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/ami-chini-go-chini.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/ami-chini-go-chini.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/ami-chini-go-chini.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -176,10 +326,40 @@ S  -   G  |  R   -   N,  |  S/R/S  -  -  |  -  -  -
 স  ত্  ত  |  সু  ন্  দ   |  র৹৹    ৹  ৹  |  ৹  ৹  ৹</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/anandaloke-mangalaloke.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/anandaloke-mangalaloke.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/anandaloke-mangalaloke.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/anandaloke-mangalaloke.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/anandaloke-mangalaloke.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/anandaloke-mangalaloke.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/anandaloke-mangalaloke.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/anandaloke-mangalaloke.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>বহে নিরন্তর অনন্ত আনন্দধারা</h3>
+        <p class="translit">Bahe nirantar ananta anandadhara</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>jhanp · 10 matras · vibhags 2+3+2+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/bahe-nirantar-anantanandadhara.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S  N,  |  S 
+ব  হে  |  নি
+R  -/G/R  |  G  M  P  |  (P)D  -   |  M  M  -
+র  ৹ন্    |  ত  র  অ  |  ন     ন্  |  ত  আ  ৹
+(R)G  -   |  S  N,  -/(D,)N,  |  S   -  |  R   N,  S  
+ন     ন্  |  দ  ধা  ৹         |  রা  ৹  |  &quot;ব  হে  নি&quot;
+-  -  |  -
+·  ·  |  ·</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/bahe-nirantar-anantanandadhara.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/bahe-nirantar-anantanandadhara.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/bahe-nirantar-anantanandadhara.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/bahe-nirantar-anantanandadhara.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -206,10 +386,130 @@ G  G/P  P   P  P   P/G  G   P   -   D   N   D/P
 আ  মা৹  র্  প  রা  নে৹  যে  গা  ন্  বা  জি  ছে৹</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/bhalobese-sokhi.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/bhalobese-sokhi.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/bhalobese-sokhi.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/bhalobese-sokhi.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/bhalobese-sokhi.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/bhalobese-sokhi.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/bhalobese-sokhi.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/bhalobese-sokhi.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>ভেঙে মোর ঘরের চাবি</h3>
+        <p class="translit">Bhenge mor gharer chabi</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>dadra · 6 matras · vibhags 3+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/bhenge-mor-gharer-chabi.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>P   P   P   |  - 
+ভে  ঙে  মো  |  র্
+(P)M  M   -/D  |  (D)P  P   -/D  |  (D)M  P   -  |  (P)M  G   -/M
+ঘ     রে  র্   |  চা    বি  ৹    |  নি    য়ে  ৹  |  যা    বি  ৹  
+(R)G  -/R  G  |  M   P   -  |  -  -  -  |  (P)N  -  -
+কে    ৹    আ  |  মা  রে  ৹  |  ৹  ৹  ৹  |  ও     ৹  ৹
+(N)P  -  -/D  |  N   (N)D  -/N  |  (D)P  -   P   |  P   P   -/D
+ব     ৹  ন্   |  ধু  আ     ৹    |  মা    র্  না  |  পে  য়ে  ৹  </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/bhenge-mor-gharer-chabi.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/bhenge-mor-gharer-chabi.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/bhenge-mor-gharer-chabi.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/bhenge-mor-gharer-chabi.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>বিপদে মোরে রক্ষা করো</h3>
+        <p class="translit">Bipade more rokkha koro</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>jhampak · 5 matras · vibhags 3+2</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/bipade-more-rokkha-koro.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S   S&#x27;  S&#x27;  |  N   N   |  D  -  D     |  P  P 
+বি  প   দে  |  মো  রে  |  র  ৹  ক্ষা  |  ক  রো
+D  D  D   |  P   M#  |  (M#)G  -/M#/G  M#  |  (M#)N  -/D
+এ  ন  হে  |  মো  রে  |  প্রা   ৹র্     থ   |  না     ৹  
+D   D  P   |  P  R   |  G   G   G  |  R  R 
+বি  প  দে  |  আ  মি  |  না  যে  ন  |  ক  রি
+S  -  -  |  -  -   |  G    -  G  |  R   R 
+ভ  ৹  ৹  |  ৹  য়্  |  দুঃ  ৹  খ  |  তা  পে</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/bipade-more-rokkha-koro.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/bipade-more-rokkha-koro.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/bipade-more-rokkha-koro.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/bipade-more-rokkha-koro.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>চিরবন্ধু চিরনির্ভর চিরশান্তি</h3>
+        <p class="translit">Chirabandhu chiranirbhar chirashanti</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>sasthi · 6 matras · vibhags 2+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/chirabandhu-chiranirbhar.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>P   P  |  M/D  -  -   D   |  (D)P  D  |  P/D  -/n  D/P  M  |  G   M  |  (D)P  -  -   P 
+চি  র  |  ব৹   ৹  ন্  ধু  |  চি    র  |  নি৹  র্   ভ৹   র  |  চি  র  |  শা    ৹  ন্  তি
+(M)G  M   |  P/D  -/n/S&#x27;  n/D   P/D
+তু    মি  |  হে৹  ৹       প্র৹  ভু৹
+-  -  |  D   N   S&#x27;  (S&#x27;)N  |  S&#x27;  -   |  P/D  n  D/n  -/S&#x27;  |  (S&#x27;)N  -  |  S&#x27;  -  -  -
+৹  ৹  |  তু  মি  চি  র      |  ম   ঙ্  |  গ৹   ল  স৹   ৹     |  খা     ৹  |  হে  ৹  ৹  ৹
+(S&#x27;)R&#x27;  S&#x27;  |  n  D  P  M   |  S&#x27;  -  |  S&#x27;  R&#x27;  G&#x27;  -  |  -  -/M&#x27;/G&#x27;  |  R&#x27;  -
+তো      মা  |  র  জ  গ  তে  |  হে  ৹  |  চি  র   স   ৹  |  ৹  ৹ঙ্      |  গী  ৹</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/chirabandhu-chiranirbhar.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/chirabandhu-chiranirbhar.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/chirabandhu-chiranirbhar.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/chirabandhu-chiranirbhar.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>এ পরবাসে রবে কে হায়</h3>
+        <p class="translit">E parabase rabe ke hay</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>madhyaman · 16 matras · vibhags 4+4+4+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/e-parabase-rabe-ke-hay.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S/R/M  -/P/D/n  -/S&#x27;/n/D  -/n
+·      ·        ·         ·  
+S&#x27;/n/D  -/n  -  -  |  n/D/P  M/g  -  -  |  -/R/g  -/M/g/R  -/g  -  |  -/-  -/R  S/N,  S
+এ৹৹     ৹    ৹  ৹  |  প৹র    বা৹  ৹  ৹  |  ৹      ৹        ৹    ৹  |  ৹    ৹    সে৹   র
+R   -/(M)g  R   -  |  -  R/g  -/M/P/M  -/g/R  |  -/g  -  -  -/R  |  -/S/N,  -/S  -  - 
+বে  ৹       কে  ৹  |  ৹  হা৹  ৹        ৹      |  ৹    ৹  ৹  ৹    |  ৹       ৹    ৹  য়্
+S   R  M   M  |  P   -  -  M/G  |  M   -/n  D  -  |  -  -/n/D  -/P/D/n  -/S&#x27;/n/D
+কে  র  বে  এ  |  সং  ৹  ৹  শ৹   |  য়ে  ৹    স  ৹  |  ৹  ৹      ৹        ৹       </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/e-parabase-rabe-ke-hay.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/e-parabase-rabe-ke-hay.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/e-parabase-rabe-ke-hay.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/e-parabase-rabe-ke-hay.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -236,10 +536,40 @@ S   -  N,  |  N,  N,  -   |  S   -  -  |  -  M  M
 রে  ৹  য   |  দি  তো  র্  |  রে  ৹  ৹  |  ৹  ত  বে</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/ekla-chalo-re.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/ekla-chalo-re.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/ekla-chalo-re.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/ekla-chalo-re.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/ekla-chalo-re.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/ekla-chalo-re.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/ekla-chalo-re.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/ekla-chalo-re.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>এমন দিনে তারে বলা যায়</h3>
+        <p class="translit">Emon dine tare bola jay</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>talamukta — free rhythm</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/emon-dine-tare-bola-jay.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>D  P/D  M
+·  ·    ·
+M  M  M  G   R   G   S   R  R/M  M   -  -  -  -/G/M
+এ  ম  ন  দি  নে  তা  রে  ব  লা৹  যা  ৹  ৹  ৹  ৹য়্  
+R  M  M  P  P  P/D  -   n  D   n   -  -  -  - 
+এ  ম  ন  ঘ  ন  ঘো৹  র্  ব  রি  ষা  ৹  ৹  ৹  য়্
+D  P/D  M  G/M  R   G  R/S  R   G/M/P  M/P/M/G  -/M  -  -  -/G/M/G
+এ  ম৹   ন  দি৹  নে  ম  ন৹   খো  লা৹৹   যা৹৹৹    ৹    ৹  ৹  ৹৹য়্   </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/emon-dine-tare-bola-jay.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/emon-dine-tare-bola-jay.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/emon-dine-tare-bola-jay.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/emon-dine-tare-bola-jay.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -266,10 +596,40 @@ P   M  G   G  |  -/R  G   S   -
 য়া  আ  ছে  আ  |  ৹    কা  শে  ৹</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/esho-shyamalo-sundoro.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/esho-shyamalo-sundoro.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/esho-shyamalo-sundoro.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/esho-shyamalo-sundoro.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/esho-shyamalo-sundoro.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/esho-shyamalo-sundoro.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/esho-shyamalo-sundoro.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/esho-shyamalo-sundoro.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>গভীর রজনী নামিল হৃদয়ে</h3>
+        <p class="translit">Gabhir rajani namilo hridoye</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>rupakra · 8 matras · vibhags 3+2+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/gabhir-rajani-namilo.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>d  N   N  |  S&#x27;  -  |  S&#x27;  r&#x27;  -  |  S&#x27;  N   d  |  P   -  |  P  d   -
+গ  ভী  র  |  র   ৹  |  জ   নী  ৹  |  না  মি  ল  |  হৃ  ৹  |  দ  য়ে  ৹
+P  M#  G   |  G   -  |  d  M#  -  |  G   -  -  |  -/r  -  |  -/S  -  -
+আ  র   কো  |  লা  ৹  |  হ  ল   ৹  |  না  ৹  ৹  |  ৹    ৹  |  ৹    ৹  ই
+S  S   S  |  M   -  |  M   G   -  |  M   d/M  d  |  N   -   |  S&#x27;  S&#x27;  -
+র  হি  র  |  হি  ৹  |  শু  ধু  ৹  |  সু  দূ৹  র  |  সি  ন্  |  ধু  র   ৹
+N    S&#x27;  S&#x27;/G&#x27;  |  G&#x27;  -/r&#x27;  |  r&#x27;  S&#x27;  -/r&#x27;  |  N   -  -/S&#x27;  |  -/r&#x27;/S&#x27;  -/N  |  -/(d)M#  -  -/d
+ধ্ব  নি  শু৹    |  নি  ৹     |  বা  রে  ৹     |  পা  ৹  ৹     |  ৹        ৹    |  ৹        ৹  ই  </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/gabhir-rajani-namilo.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/gabhir-rajani-namilo.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/gabhir-rajani-namilo.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/gabhir-rajani-namilo.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -296,10 +656,160 @@ S   -  -  -  |  -  -  -  -  |  P  D   P   -/D  |  -/S&#x27;  S&#x27;  R&#x27;  -
 রে  ৹  ৹  ৹  |  ৹  ৹  ৹  ৹  |  ও  রে  কা  ৹    |  র্    পা  নে  ৹  |  ম   ন্</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/gram-chhara-oi-ranga-matir-path.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/gram-chhara-oi-ranga-matir-path.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/gram-chhara-oi-ranga-matir-path.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/gram-chhara-oi-ranga-matir-path.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/gram-chhara-oi-ranga-matir-path.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/gram-chhara-oi-ranga-matir-path.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/gram-chhara-oi-ranga-matir-path.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/gram-chhara-oi-ranga-matir-path.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>হরষে জাগো আজি</h3>
+        <p class="translit">Haroshe jago aji</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>dhamar · 14 matras · vibhags 3+2+2+3+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/haroshe-jago-aji.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S
+·
+G  M  D   |  -/P  D   |  -  -/N/D  |  N 
+হ  র  ষে  |  ৹    জা  |  ৹  ৹      |  গো
+(N)R&#x27;/S&#x27;  -/S&#x27;  -/D  |  P   -/P  |  -/D  G  |  P/-  -/M#  -/D/P  |  P/-  -/M#  (D)P  -/P  |  -/G  -
+আ৹        ৹     ৹    |  জি  ৹    |  ৹    হ  |  জা   ৹     ৹      |  গো   ৹     রে    ৹    |  ৹    ৹
+G    G/-  -/R  |  G/-  -/R  |  G/-  -/R  |  G   -  -/M  |  D/-   -/P  P/-  -/M#
+তাঁ  হা   ৹    |  র    ৹    |  সা   ৹    |  থে  ৹  ৹    |  প্রী  ৹    তি   ৹   </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/haroshe-jago-aji.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/haroshe-jago-aji.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/haroshe-jago-aji.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/haroshe-jago-aji.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>জাগিতে হবে রে</h3>
+        <p class="translit">Jagite hobe re</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>chautal · 12 matras · vibhags 2+2+2+2+2+2</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/jagite-hobe-re.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S   -/S&#x27;  |  N   D   |  -/P
+জা  ৹     |  গি  তে  |  ৹  
+P  -/N  |  -/D/S&#x27;  N   |  -  -  |  P   -/(M#)P  |  -/(M#)P  -/G  |  -  G/G/P
+হ  ৹    |  ৹       বে  |  ৹  ৹  |  রে  ৹        |  ৹        ৹    |  ৹  মোহ৹ 
+G   -  |  G/R    S  |  S   S   |  M  G   |  G/N,  R  |  S   S
+নি  ৹  |  দ্রা৹  ক  |  ভু  না  |  র  বে  |  চি৹   র  |  দি  ন
+S    S   |  S   G  |  G  G   |  P   P  |  D/P  P/M#  |  -/P  P
+ত্য  জি  |  তে  হ  |  ই  বে  |  সু  খ  |  শ৹   য়৹    |  ৹    ন</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/jagite-hobe-re.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/jagite-hobe-re.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/jagite-hobe-re.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/jagite-hobe-re.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>জনগণমন-অধিনায়ক জয় হে</h3>
+        <p class="translit">Jana gana mana adhinayaka jaya he</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>kaharba · 8 matras · vibhags 4+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/jana-gana-mana.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S  R  G  G  |  G  G  G  G   |  G   -  G  G  |  (G)R  G  M   -
+জ  ন  গ  ণ  |  ম  ন  অ  ধি  |  না  ৹  য়  ক  |  জ     য়  হে  ৹
+(M)G  -  G  G  |  R   -  R    R   |  (S)N,  -/R  S   -  |  -  -  S  - 
+ভা    ৹  র  ত  |  ভা  ৹  গ্য  বি  |  ধা     ৹    তা  ৹  |  ৹  ৹  প  ন্
+(S)P  -  P  P   |  -   P   P   -   |  P   -  P  (P)M#  |  (M#)P  -/M#  (D)P  -
+জা    ৹  ব  সি  |  ন্  ধু  গু  জ্  |  রা  ৹  ট  ম      |  রা     ৹     ঠা    ৹
+M     -  M   M  |  M  -  M  G  |  (M)R  -/M  G  -  |  -  -  -  -
+দ্রা  ৹  বি  ড়  |  উ  ৎ  ক  ল  |  ব     ঙ্   গ  ৹  |  ৹  ৹  ৹  ৹</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/jana-gana-mana.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/jana-gana-mana.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/jana-gana-mana.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/jana-gana-mana.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>ক্লান্তি আমার ক্ষমা করো প্রভু</h3>
+        <p class="translit">Klanti amar khoma koro probhu</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>dadra · 6 matras · vibhags 3+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>high</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/klanti-amar-khoma-koro.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S     -/R  G   |  G  G   -   |  (R)G  G   G/R  |  R   -/N,  R  
+ক্লা  ন্   তি  |  আ  মা  র্  |  ক্ষ   মা  ক৹   |  রো  ৹     প্র
+S   -  -  |  -  -  -  |  (S)G  G   R  |  S   N,  S 
+ভু  ৹  ৹  |  ৹  ৹  ৹  |  প     থে  য  |  দি  পি  ছি
+R   -  -  |  -  (S)N,  S   |  S   -/P  P  |  (P)M#  -/G  M
+য়ে  ৹  ৹  |  ৹  পি     ছি  |  য়ে  ৹    প  |  ড়ি     ৹    ক
+(M)G  -  -  |  -  -/R  -/G
+ভু    ৹  ৹  |  ৹  ৹    ৹  </pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/klanti-amar-khoma-koro.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/klanti-amar-khoma-koro.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/klanti-amar-khoma-koro.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/klanti-amar-khoma-koro.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>কৃষ্ণকলি আমি তারেই বলি</h3>
+        <p class="translit">Krishnakoli ami tarei boli</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>dadra (5-matra setting as printed) · 5 matras · vibhags 2+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/krishnakoli-ami-tarei-boli.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S   -   |  S  R  R   |  R  G   |  R   G   -/M  |  (M)R  G   |  -  -  M 
+কৃ  ষ্  |  ণ  ক  লি  |  আ  মি  |  তা  রে  ই    |  ব     লি  |  ৹  ৹  কা
+P   P   |  P   P  P   |  P    P   |  -/D  P/D   -/N  |  -/D  -/P  |  -  -  - 
+লো  তা  |  রে  ব  লে  |  গাঁ  য়ে  |  র্   লো ৹  ৹    |  ৹    ৹    |  ৹  ৹  ক্
+P   -/d  |  d   d   n/d   |  P   n   |  n   (n)d  -/n  |  d   P   |  -  -  -
+মে  ঘ্   |  লা  দি  নে ৹  |  দে  খে  |  ছি  লে    ম্   |  মা  ঠে  |  ৹  ৹  ৹
+P/S&#x27;  S&#x27;  |  N   D/P   -   |  M   P   |  D  (D)P  -/M/P  |  M/G   -  |  -  -  - 
+কা ৹  লো  |  মে  য়ে ৹  র্  |  কা  লো  |  হ  রি    ৹ ণ্   |  চো ৹  ৹  |  ৹  ৹  খ্</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/krishnakoli-ami-tarei-boli.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/krishnakoli-ami-tarei-boli.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/krishnakoli-ami-tarei-boli.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/krishnakoli-ami-tarei-boli.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -326,10 +836,70 @@ P   P/S&#x27;  n   |  D   P   D/P  |  M   -/P/D/P  -/M/P  |  M/g  -  -/R/g
 তো  মা৹   রে  |  দে  খি  তে৹  |  দে  ৹        ৹য়্    |  না৹  ৹  ৹    </pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/majhe-majhe-tobo-dekha-pai.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/majhe-majhe-tobo-dekha-pai.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/majhe-majhe-tobo-dekha-pai.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/majhe-majhe-tobo-dekha-pai.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/majhe-majhe-tobo-dekha-pai.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/majhe-majhe-tobo-dekha-pai.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/majhe-majhe-tobo-dekha-pai.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/majhe-majhe-tobo-dekha-pai.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>পথ চেয়ে যে কেটে গেল কত দিনে রাতে</h3>
+        <p class="translit">Path cheye je kete gelo koto dine raate</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>arathheka · 16 matras · vibhags 4+4+4+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/path-cheye-je-kete-gelo.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>n,/S  -/g/M  -/P/d  d   |  P 
+প৹    ৹      ৹থ্    চে  |  য়ে
+M   -  -  -  |  g/M  g/M/P  -/d/d/P  -  |  P/d/P  M  -  -/P/P/M  |  -  -  -/g/R  R/g
+যে  ৹  ৹  ৹  |  কে৹  টে৹৹   ৹        ৹  |  গে৹৹   ল  ৹  ৹        |  ৹  ৹  ৹      কত 
+R   g   -  -  |  g/M  g/r/S  -/g/g  -/r/S  |  -/n,/S  -  -  S    |  S/d  d     d  P 
+দি  নে  ৹  ৹  |  রা৹  তে৹৹   ৹      ৹      |  ৹       ৹  ৹  আজ্  |  তো৹  মায়্  আ  মা
+-  -  -  -   |  P     P/d/n  -/S&#x27;/S&#x27;/n  -/d/n  |  P   P/d  -/M  -  |  P/M  -   P  P 
+৹  ৹  ৹  য়্  |  প্রা  ণে৹৹   ৹          ৹র্    |  বঁ  ধু৹  ৹    ৹  |  মি৹  ল্  ব  গো</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/path-cheye-je-kete-gelo.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/path-cheye-je-kete-gelo.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/path-cheye-je-kete-gelo.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/path-cheye-je-kete-gelo.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>পথে চলে যেতে যেতে</h3>
+        <p class="translit">Pathe chole jete jete</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>ardha-jhanp · 5 matras · vibhags 2+3</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/pathe-chole-jete-jete.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>P/D  P  |  M  -/G
+·    ·  |  ·  ·  
+S  G   |  G  -  G   |  G   -/M  |  R   -/P  M#
+প  থে  |  চ  ৹  লে  |  যে  ৹    |  তে  ৹    যে
+P   -  |  -  -  -  |  N/D  -/N  |  S&#x27;  -/N/D  -/N
+তে  ৹  |  ৹  ৹  ৹  |  কো৹  ৹    |  থা  ৹      ৹  
+S&#x27;  -/G&#x27;  |  R&#x27;/S&#x27;  -/N  N   |  P   -/D  |  D/S&#x27;  -  - 
+কো  ন্    |  খা৹    ৹    নে  |  তো  ৹    |  মা৹   ৹  র্</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/pathe-chole-jete-jete.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/pathe-chole-jete-jete.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/pathe-chole-jete-jete.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/pathe-chole-jete-jete.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -356,10 +926,40 @@ M  -   M/G   |  M   -/G/M/D  P  |  M   -/G  M   |  R   -  -/S
 ক  ল্  লো ৹  |  লে  ৹        চ  |  লি  ৹    য়া  |  যা  ৹  য়্ </pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/phule-phule-dhole-dhole.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/phule-phule-dhole-dhole.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/phule-phule-dhole-dhole.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/phule-phule-dhole-dhole.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/phule-phule-dhole-dhole.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/phule-phule-dhole-dhole.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/phule-phule-dhole-dhole.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/phule-phule-dhole-dhole.musicxml">MusicXML</a>
+      </p>
+    </article>
+
+    <article class="song">
+      <header>
+        <h3>প্রতিদিন তব গাথা গাব আমি সুমধুর</h3>
+        <p class="translit">Pratidin tabo gatha gabo ami sumadhur</p>
+      </header>
+      <dl class="meta">
+        <div><dt>Taal</dt><dd>surfank · 10 matras · vibhags 4+2+4</dd></div>
+        <div><dt>Raga / anga</dt><dd>—</dd></div>
+        <div><dt>Confidence</dt><dd>medium</dd></div>
+      </dl>
+      <audio controls preload="none" src="audio/pratidin-tabo-gatha.mp3"></audio>
+      <details>
+        <summary>See the notation this audio is made from</summary>
+        <pre>S    S&#x27;  S&#x27;  S&#x27;  |  S&#x27;  S&#x27;/n  |  n   -/d  d   -
+প্র  তি  দি  ন   |  ত   ব৹    |  গা  ৹    থা  ৹
+P   P/n  d  P   |  M   G  |  M   -  -  - 
+গা  ব৹   আ  মি  |  সু  ম  |  ধু  ৹  ৹  র্
+M   P   M   M/g  |  g   g/R  |  g  -/R  g   -
+তু  মি  দে  হো৹  |  মো  রে৹  |  ক  ৹    থা  ৹
+R   M   g   R   |  S   S/N,  |  S   -  -  - 
+তু  মি  দে  হো  |  মো  রে৹   |  সু  ৹  ৹  র্</pre>
+      </details>
+      <p class="links">
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/pratidin-tabo-gatha.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/pratidin-tabo-gatha.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/pratidin-tabo-gatha.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/pratidin-tabo-gatha.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -386,10 +986,10 @@ P,  -  P,  |  D,  D,  -/N,/S/R  |  S   -  -   |  -  P  -
 সে  ৹  কি  |  ভো  লা  ৹         |  যা  ৹  য়্  |  ৹  আ  য়্</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/purano-sei-diner-katha.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/purano-sei-diner-katha.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/purano-sei-diner-katha.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/purano-sei-diner-katha.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/purano-sei-diner-katha.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/purano-sei-diner-katha.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/purano-sei-diner-katha.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/purano-sei-diner-katha.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -416,10 +1016,10 @@ M   G   R  |  S   N,  D,  |  P,  -/S  S   |  S   -  S
 নি  বি  ড়  |  নি  ভৃ  ত   |  পূ  র্   ণি  |  মা  ৹  নি</pre>
       </details>
       <p class="links">
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/songs/tumi-robe-nirobe.json">JSON</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/data/text/tumi-robe-nirobe.txt">sargam-text</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/midi/tumi-robe-nirobe.mid">MIDI</a> ·
-        <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/derived/musicxml/tumi-robe-nirobe.musicxml">MusicXML</a>
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/songs/tumi-robe-nirobe.json">JSON</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/data/text/tumi-robe-nirobe.txt">sargam-text</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/midi/tumi-robe-nirobe.mid">MIDI</a> ·
+        <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/derived/musicxml/tumi-robe-nirobe.musicxml">MusicXML</a>
       </p>
     </article>
 
@@ -448,13 +1048,13 @@ every Hindustani antara does — it leapt to the upper octave. Tagore didn't. He
 middle register and saves the one climb for three words: <em>প্রাণের মাঝে আয়</em> — come into
 my heart. The music rises where the poem rises, not where the rulebook says.</blockquote>
 
-<p><a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/experiment/EXPERIMENT.md">Full method, prompt and output →</a></p>
+<p><a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/experiment/EXPERIMENT.md">Full method, prompt and output →</a></p>
 
 <footer>
   Compositions by Rabindranath Tagore (1861–1941), public domain in India since 2002.
-  Data <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/LICENSE">CC BY 4.0</a>, code MIT.
+  Data <a href="https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/LICENSE">CC BY 4.0</a>, code MIT.
   Built by <a href="https://github.com/indranilbanerjee">Indranil Banerjee</a>.
-  Corrections are the point — <a href="https://github.com/NeelVerse-Lab/tagore-swaralipi/issues/new?template=notation-correction.yml">file one</a>.
+  Corrections are the point — <a href="https://github.com/indranilbanerjee/tagore-swaralipi/issues/new?template=notation-correction.yml">file one</a>.
 </footer>
 
 </div>

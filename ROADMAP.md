@@ -5,31 +5,51 @@ the maintainer. Items marked **help wanted** are ones a contributor can pick up 
 coordinating first — say so in an issue and it's yours.
 
 The guiding rule: **the corpus grows only as fast as it can be verified.** A hundred unverified
-songs would be worth less than the ten we have, because the value of this data is that you can
-check it.
+songs would be worth less than thirty checkable ones, because the value of this data is that you
+can check it. v0.2 bent that rule — it added twenty songs and verified none of them — so v0.3
+exists to pay that back before anything else is added.
 
 ---
 
-## v0.2 — Verify what exists (next)
+## v0.2 — shipped 2 September 2026
+
+Twenty songs added (10 → 30), taal families 6 → 20, the archive catalogued (1,568 songs with
+notation), komal Re decoded, and the jhampak taal corrected by deferring to the printed page.
+The three reserve songs promised below were partly delivered: আলো আমার আলো and ক্লান্তি আমার
+ক্ষমা করো are in; আমার পরান যাহা চায় is **not in the witness archive at all** and needs a
+transcription from print.
+
+What v0.2 did *not* do is verify anything new against print — the scan-verified count is still
+three. That is the honest headline, and it sets v0.3.
+
+---
+
+## v0.3 — Verify what exists (next)
 
 The single most important release. No new songs are strictly required; the goal is that every
 existing song has been read against the printed Swarabitan rather than an online copy of it.
 
 | Task | Notes | Status |
 |---|---|---|
-| **Verify the remaining seven songs against Swarabitan scans** | Volumes and archive IDs already identified in [`docs/VERIFICATION.md`](docs/VERIFICATION.md). One song ≈ one evening. **help wanted** | 3/10 done |
+| **Verify the remaining seven v0.1 songs against Swarabitan scans** | Volumes and archive IDs already identified in [`docs/VERIFICATION.md`](docs/VERIFICATION.md). One song ≈ one evening. **help wanted** | 3/30 done |
+| **Identify Swarabitan volumes for the twenty v0.2 songs** | Not yet located. `sources/catalogue.json` plus the printed Swarabitan index (`in.ernet.dli.2015.340247`) is the starting point. **help wanted** | open |
+| **Settle the কৃষ্ণকলি taal conflict** | The witness names দাদরা; the page prints a five-matra avartan divided 2+3. One printed page settles it | open |
+| **Decode the trailing-capital glyphs** | 54 unreadable glyphs remain, preserved as annotations. If you know what they mark, this is a high-value issue. **help wanted** | open |
 | **Add the second setting of মাঝে মাঝে তব দেখা পাই** | Swarabitan vol. 23 carries two distinct settings; we hold only the ektaal one. Needs a schema decision: sibling songs, or variants inside one file? | open |
 | **Decode the 22 `i`-form tokens** | A source-notation variant we could not resolve. Pitch is confident, vowel/duration semantics are not. Needs someone who knows akarmatrik deeply. **help wanted** | open |
 | **Resolve the ambiguous udara mark** | পুরানো, line 4 matra 5 — needs a cleaner scan or a print copy | open |
-| **Three reserve songs** | আলো আমার আলো ওগো · ক্লান্তি আমার ক্ষমা করো · আমার পরান যাহা চায় — already researched, not yet encoded | open |
 | **Mint a DOI** | Connect the repo to Zenodo so each release gets a citable DOI. Without one, academics can cite the dataset but not durably. Maintainer task, ~15 minutes | open |
 
 **Definition of done:** every song's `provenance.scan_verification` is populated, and
-`docs/VERIFICATION.md` reports 10/10 with every discrepancy written down.
+`docs/VERIFICATION.md` reports 30/30 with every discrepancy written down.
+
+This release deliberately adds no songs. v0.2 showed how easily breadth outruns verification —
+the corpus tripled while the verified count stayed at three — and the fix is to let verification
+catch up before growing again.
 
 ---
 
-## v0.3 — Make the notation legible again
+## v0.4 — Make the notation legible again
 
 Right now the data round-trips to plain sargam text. It should round-trip to something a Bengali
 musician recognises on sight.
@@ -51,8 +71,9 @@ musician recognises on sight.
 
 Scale, but only behind verification.
 
-- 50 songs spanning all six parjaays, with deliberate coverage of rare taals (nabataal, ekadashi,
-  rupakda, jhampak) and Tagore's own rhythmic inventions.
+- 50+ songs spanning all six parjaays — **only once v0.3 has closed the verification gap.** The catalogue shows what is still uncovered: নবতাল (9),
+  একাদশী (11), নবপঞ্চ (18), কাশ্মীরি, যৎ, অখণ্ড, and the বিলম্বিত ত্রিতাল setting — each of
+  them one song away from being represented.
 - More bhanga gaan, with their source tunes identified — this is what makes the comparative
   analysis in [`docs/USE_CASES.md`](docs/USE_CASES.md) possible.
 - **A contributor verification workflow**: a script that takes a song ID, pulls the right scan page,

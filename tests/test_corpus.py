@@ -119,6 +119,43 @@ def test_taal_cycles_close(song_file):
 
 
 @pytest.mark.parametrize("song_file", SONG_FILES, ids=SONG_IDS)
+def test_assigned_taal_matches_the_printed_bar_structure(song_file):
+    """
+    In akarmatrik notation the bar line marks the avartan (the taal cycle) and the
+    vibhag marks divide it. So the page itself states the cycle length, and the taal
+    we assign must agree with it.
+
+    This exists because it caught a real error: jhampak was entered as ten matras
+    from Hindustani Jhaptaal, while every page printed bars every five cells —
+    Rabindrasangeet uses its own taal system. Theory lost to the notation, as it
+    should.
+    """
+    from collections import Counter
+
+    doc = load(song_file)
+    if doc["taal"]["talamukta"]:
+        pytest.skip("talamukta: no cycle printed")
+    cycles = Counter()
+    for line in doc["lines"]:
+        n = len(line["cells"])
+        bars = sorted({m["cell"] for m in line["marks"]
+                       if m["type"] in ("bar", "section_bar")} | {n})
+        prev = 0
+        for b in bars:
+            if 0 < b <= n and b - prev > 1:
+                cycles[b - prev] += 1
+            prev = b
+    if not cycles:
+        pytest.skip("no bar lines recorded for this song")
+    printed = cycles.most_common(1)[0][0]
+    assigned = doc["taal"]["matras"]
+    assert printed % assigned == 0 or assigned % printed == 0, (
+        f"{doc['id']}: taal is recorded as {assigned} matras but the page prints "
+        f"its bars every {printed} cells"
+    )
+
+
+@pytest.mark.parametrize("song_file", SONG_FILES, ids=SONG_IDS)
 def test_no_empty_cells_and_no_orphan_sustain(song_file):
     """
     Every matra must contain something, and a song cannot open by sustaining a

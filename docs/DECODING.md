@@ -17,6 +17,7 @@ records the decode and the evidence, because the whole dataset stands on it.
 | `ta` | জ্ঞা — komal Ga | triangulated: degree-exact alignment against the romanized witness of আমার পরান যাহা চায় (their S/N/D ↔ our g/R/S under a consistent tonic shift) |
 | `da` | দা — komal Dha | contextual + mnemonic (দ IS the komal-Dha letter): chromatic d–D motion in kirtan-anga ভালোবেসে সখী |
 | `ua` | ণা — komal Ni | contextual, strong: yields the textbook Desh avaroha S′–n–D–P in এসো শ্যামল সুন্দর and Jhinjhoti descents in মাঝে মাঝে |
+| `va` | ঋা — **komal Re** *(added v0.2)* | positional: across the corpus `v` sits beside Sa 48 times and beside Ga/komal-Ga 14, and essentially never beside Ma or Pa — which is Re's position in the scale and nothing else's. Shuddha Re already has code `r`, so `v` is the komal form. It appears only in Bhairavi-flavoured songs, alongside komal Ga, Dha and Ni |
 | suffix `h` | udara (lower saptak), e.g. `nha` = ণ়/na-udara… `pha` = পা় | triangulated (low passages align with by-ear witnesses) |
 | suffix `f` | tara (upper saptak), e.g. `sfa` = সা′ | triangulated (S′ climaxes align) |
 | trailing `a` | the আ-কার — one matra of vowel | structural (the system's namesake) |
@@ -55,6 +56,29 @@ assigns these songs:
 
 A wrong decode of any komal/kori token would have scrambled these signatures.
 It didn't.
+
+## What v0.2 changed
+
+**A missing swara.** The v0.1 table had no code for komal Re — the one variant with no
+entry. Encoding twenty more songs surfaced an undecoded token, `v`, appearing 49 times in
+two Bhairavi-flavoured songs. Its neighbours settle it: `v` sits next to Sa 48 times and
+next to Ga 14, and never next to Ma or Pa. That is Re's position, and since shuddha Re is
+already `r`, `v` is komal Re. None of the ten songs published in v0.1 use it, so that
+release stands unaffected — but a corpus that grew without noticing would have silently
+mis-encoded every Bhairavi song it touched.
+
+**A policy change: we no longer guess.** Previously an unreadable character became a
+placeholder Sa flagged `uncertain`. That is a bad failure mode — a wrong pitch sitting in
+the data looking like a right one. Unreadable glyphs are now recorded as annotation marks
+on the cell instead. They are visibly missing rather than invisibly wrong. Fifty-four
+survive across thirty songs, mostly trailing capitals whose meaning we have not
+established; if you know what they mark, that is a valuable issue to file.
+
+**A theory corrected by the notation.** We entered ঝম্পক as ten matras, importing
+Hindustani Jhaptaal. Every page printed its bar lines every five cells. Rabindrasangeet
+uses its own taal system — ঝম্পক 5, ষষ্ঠী 6, রূপকড়া 8 — and the notation was right where
+the imported theory was wrong. A test now enforces this: the taal we assign must agree
+with the cycle the page prints.
 
 ## Residual uncertainty (all flagged in-data)
 

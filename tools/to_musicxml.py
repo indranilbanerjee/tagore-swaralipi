@@ -77,8 +77,9 @@ def stabilise(path):
     """
     Make music21's output byte-identical across runs and machines.
 
-    Three things vary per run and carry no musical meaning: the encoding date,
-    the music21 version string, and randomly generated part ids. Normalising them
+    Four things vary per run or per music21 release and carry no musical meaning:
+    the encoding date, the music21 version string, randomly generated part ids, and
+    the <supports> capability hints (music21 9.9 stopped emitting them). Normalising them
     is what lets CI assert that every derived file is reproducible from the
     canonical JSON — so that a diff in derived/ always means a real change.
     """
@@ -86,6 +87,7 @@ def stabilise(path):
     text = re.sub(r'<encoding-date>[^<]*</encoding-date>',
                   f'<encoding-date>{ENCODING_DATE}</encoding-date>', text)
     text = re.sub(r'<software>[^<]*</software>', f'<software>{SOFTWARE}</software>', text)
+    text = re.sub(r'[ \t]*<supports [^>]*/>\r?\n', '', text)
     for index, part_id in enumerate(dict.fromkeys(re.findall(r'"(P[0-9a-f]{8,})"', text)), start=1):
         text = text.replace(f'"{part_id}"', f'"P{index}"')
     Path(path).write_text(text, encoding='utf-8')

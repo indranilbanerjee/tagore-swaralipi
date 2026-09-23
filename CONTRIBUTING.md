@@ -133,7 +133,7 @@ changed, the derived MIDI, MusicXML and audio are regenerated so everything stay
 If you're comfortable with a text editor and a terminal, you can go further than reporting.
 
 ```bash
-git clone https://github.com/NeelVerse-Lab/tagore-swaralipi.git
+git clone https://github.com/indranilbanerjee/tagore-swaralipi.git
 cd tagore-swaralipi
 pip install -r requirements.txt
 python -m pytest tests/ -q        # should be all green before you touch anything
@@ -205,7 +205,7 @@ The pipeline lives in [`tools/`](tools) and is plain Python with three dependenc
 ### Development setup
 
 ```bash
-git clone https://github.com/NeelVerse-Lab/tagore-swaralipi.git
+git clone https://github.com/indranilbanerjee/tagore-swaralipi.git
 cd tagore-swaralipi
 pip install -r requirements.txt
 python -m pytest tests/ -v        # must pass before you open a PR

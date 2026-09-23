@@ -12,6 +12,7 @@ Token language (decoded by cross-source triangulation, see docs/DECODING.md):
                t -> komal Ga              (জ্ঞ)
                d -> komal Dha             (দ)
                u -> komal Ni              (ণ)
+               v -> komal Re              (ঋ)
   octave     : code + 'h' = udara (-1), code + 'f' = tara (+1), bare = mudara (0)
   terminator : trailing 'a' = the আ-কার that gives the system its name
   '-' prefix / bare '-a' = sustain (dash) of the previous swara
@@ -26,7 +27,8 @@ from pathlib import Path
 NOTE_CODES = {'s': ('S', False, False), 'r': ('R', False, False), 'g': ('G', False, False),
               'm': ('M', False, False), 'p': ('P', False, False), 'q': ('D', False, False),
               'n': ('N', False, False), 'k': ('M', False, True),  't': ('G', True, False),
-              'd': ('D', True, False),  'u': ('N', True, False)}
+              'd': ('D', True, False),  'u': ('N', True, False),
+              'v': ('R', True, False)}   # komal Re — see docs/DECODING.md
 
 STRUCTURAL = {'l', 'll', 'L', 'A', '{', '}', '(', ')', '\\', 'w', 'x', '|'}
 
@@ -56,8 +58,10 @@ def parse_token_body(body):
             out.append({'type': 'sustain'})
             i += 1
             continue
-        # unknown char -> flag
-        out.append({'type': 'swara', 'swara': {'degree': 'S', 'saptak': 0}, 'uncertain': True, '_raw': ch})
+        # A character we cannot read is recorded as an annotation, never guessed
+        # into a pitch. Inventing a note would be silently wrong in the data; an
+        # annotation is visibly incomplete, which is the honest failure mode.
+        out.append({'_annotation': ch})
         i += 1
     return out
 
@@ -103,10 +107,18 @@ def parse_note_token(tok):
     if tok.endswith('i'):
         uncertain = True
         tok = tok[:-1] + 'a' if not tok.endswith('a') else tok
+    # A capital after the akar is not a kan (kans precede their swara). We do not
+    # know what it marks, so it is preserved as an annotation rather than guessed.
+    trailing = ''
+    while tok and tok[-1].isupper():
+        trailing = tok[-1] + trailing
+        tok = tok[:-1]
     # trailing akar
     if tok.endswith('a'):
         tok = tok[:-1]
-    units = parse_token_body(tok)
+    parsed_units = parse_token_body(tok)
+    annotations = [u['_annotation'] for u in parsed_units if '_annotation' in u]
+    units = [u for u in parsed_units if '_annotation' not in u]
     if kan and units:
         # attach kan to first swara unit
         for u in units:
@@ -118,7 +130,8 @@ def parse_note_token(tok):
     if uncertain:
         for u in units:
             u['uncertain'] = True
-    return {'units': units, 'marks': pre_marks + post_marks, 'raw': raw}
+    return {'units': units, 'marks': pre_marks + post_marks,
+            'annotations': annotations + ([trailing] if trailing else []), 'raw': raw}
 
 BEN_DIGITS = '০১২৩৪৫৬৭৮৯'
 
@@ -215,6 +228,8 @@ def parse_song(path):
                     marks.append({'type': {'{': 'repeat_open', '}': 'repeat_close',
                                            '(': 'alt_open', ')': 'alt_close',
                                            '[': 'bracket_open', ']': 'bracket_close'}[mk], 'cell': len(cells)})
+                for ann in parsed.get('annotations', []):
+                    marks.append({'type': 'annotation', 'raw': ann, 'cell': len(cells)})
                 all_units.extend(parsed['units'])
             if not all_units:
                 continue

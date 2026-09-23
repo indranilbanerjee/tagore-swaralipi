@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "name": "Ten Songs of Tagore, In Data (Swaralipi Corpus)",
-  "alternateName": "দশটি গান, ডেটায়",
-  "description": "Ten Rabindrasangeet digitized from akarmatrik swaralipi into an open symbolic notation format — swara, saptak, matra-fraction timing, taal cycles, and Bengali lyric alignment — with derived MIDI and MusicXML, notation-synthesized audio, per-song provenance, and a blind AI-continuation experiment. To our knowledge the first openly licensed machine-readable corpus of Rabindrasangeet notation.",
-  "url": "https://github.com/NeelVerse-Lab/tagore-swaralipi",
-  "sameAs": "https://neelverse-lab.github.io/tagore-swaralipi/",
+  "name": "Songs of Tagore, In Data (Swaralipi Corpus)",
+  "alternateName": "গান, ডেটায়",
+  "description": "Thirty Rabindrasangeet digitized from akarmatrik swaralipi into an open symbolic notation format — swara, saptak, matra-fraction timing, taal cycles across twenty taal families, and Bengali lyric alignment — with derived MIDI and MusicXML, notation-synthesized audio, per-song provenance and confidence, and a blind AI-continuation experiment. To our knowledge the first openly licensed machine-readable corpus of Rabindrasangeet notation.",
+  "url": "https://github.com/indranilbanerjee/tagore-swaralipi",
+  "sameAs": "https://indranilbanerjee.github.io/tagore-swaralipi/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "version": "0.1.0",
-  "datePublished": "2026-08-11",
+  "version": "0.2.0",
+  "datePublished": "2026-09-02",
   "inLanguage": [
     "bn",
     "en"
@@ -44,18 +44,18 @@
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/data/songs"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/data/songs"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "audio/midi",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/derived/midi"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/derived/midi"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "application/vnd.recordare.musicxml+xml",
-      "contentUrl": "https://github.com/NeelVerse-Lab/tagore-swaralipi/tree/main/derived/musicxml"
+      "contentUrl": "https://github.com/indranilbanerjee/tagore-swaralipi/tree/main/derived/musicxml"
     }
   ],
-  "measurementTechnique": "Re-encoded from the SNLTR digital edition of Swarabitan; three songs additionally verified matra-by-matra against scans of the printed Swarabitan (Visva-Bharati)."
+  "measurementTechnique": "Re-encoded from the SNLTR digital edition of Swarabitan; three songs additionally verified matra-by-matra against scans of the printed Swarabitan (Visva-Bharati). Taal assignments are cross-checked against the bar structure printed in the notation itself."
 }

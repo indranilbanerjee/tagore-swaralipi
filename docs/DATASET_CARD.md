@@ -1,8 +1,8 @@
-# Dataset Card — Ten Songs of Tagore, In Data (Swaralipi Corpus v0.1)
+# Dataset Card — Songs of Tagore, In Data (Swaralipi Corpus v0.2)
 
 ## Summary
 
-Ten Rabindrasangeet encoded from akarmatrik swaralipi into **Swaralipi-JSON**, a symbolic format
+Thirty Rabindrasangeet encoded from akarmatrik swaralipi into **Swaralipi-JSON**, a symbolic format
 built for Bengali notation rather than adapted from Western ones: swara degree with komal/kori
 forms as first-class notes, three saptaks, matra-fraction timing, taal cycles with sam/taali/khali
 structure, and Bengali lyrics aligned syllable-to-matra. Ships with derived MIDI and MusicXML,
@@ -11,9 +11,9 @@ experiment.
 
 | | |
 |---|---|
-| **Version** | 0.1 (archive-derived) |
-| **Released** | 11 August 2026 |
-| **Size** | 10 songs · 214 notated lines · 2,543 matra-cells · 3,195 units (2,183 pitched) |
+| **Version** | 0.2 (30 songs; 3 scan-verified, 27 archive-derived) |
+| **Released** | 2 September 2026 |
+| **Size** | 30 songs · 659 notated lines · 8,127 matra-cells · 10,042 units (6,816 pitched) |
 | **Languages** | Bengali (lyrics, titles, taal names); English (documentation) |
 | **Licence** | Data CC BY 4.0 · Code MIT |
 | **Curator** | Indranil (Neel) Banerjee |
@@ -33,10 +33,18 @@ experiment.
 
 ### Coverage
 
-Four taal families (ektaal 12 · dadra 6 · kaharba 8 · tintal 16 · khemta 6), one talamukta
-(free-rhythm) song, three raga-angas, two bhanga gaan built on Scottish airs, and songs from the
-Puja, Prem, Prakriti and Swadesh parjaays. The sample was chosen for **structural diversity**, so
-that the schema is exercised across the tradition's range rather than tuned to one song type.
+**Twenty taal families**: ektaal 12 · dadra 6 · kaharba 8 · tintal 16 · khemta 6 · teora 7 ·
+jhanp 10 · jhampak 5 · sasthi 6 · kawwali 8 · dhamar 14 · surfank 10 · chautal 12 ·
+ardha-jhanp 5 · madhyaman 16 · rupak 7 · rupakra 8 · arathheka 16 · a 5-matra dadra setting ·
+and **talamukta** (free rhythm, 2 songs).
+
+Also: two bhanga gaan built on Scottish airs, the Indian national anthem, and songs from the
+Puja, Prem, Prakriti, Swadesh, Bichitra and Prem-o-Prakriti parjaays — the parjaay taken from the
+witness's own classification rather than from tradition.
+
+The sample is chosen for **structural diversity**, so the schema is exercised across the
+tradition's range rather than tuned to one song type. The rare Rabindrik taals are the point:
+they are what a Western-derived format cannot hold and what a corpus of famous songs would miss.
 
 ## How it was made
 
@@ -62,17 +70,20 @@ from the cited URLs on demand (see [`sources/README.md`](../sources/README.md)).
 
 Music information retrieval on a tradition with almost no symbolic data; computational musicology
 (phrase grammar, taal-cadence idiom, how Tagore reworked borrowed melodies); pedagogy and notation
-rendering; symbolic-music modelling; and cultural-heritage preservation. It is deliberately small:
-a proof of schema and pipeline, and an invitation to scale.
+rendering; symbolic-music modelling; and cultural-heritage preservation. It remains deliberately
+small: a proof of schema and pipeline, and an invitation to scale.
 
 ## Limitations — read before relying on this
 
-- **Partially scan-verified.** 3 of 10 songs have been checked matra-by-matra against scans of the
-  printed Swarabitan (all three: exact match; see [VERIFICATION.md](VERIFICATION.md)). The other
-  seven are archive-derived and say so in their `confidence` block. Completing the remaining seven
-  is the v0.2 milestone; their volume numbers are already identified.
-- **Ten songs is 0.5% of the songbook.** Any statistical claim drawn from this corpus is a claim
-  about ten songs.
+- **Partially scan-verified.** 3 of 30 songs have been checked matra-by-matra against scans of the
+  printed Swarabitan (all three: exact match; see [VERIFICATION.md](VERIFICATION.md)). The rest are
+  archive-derived and say so in their `confidence` block.
+- **Thirty songs is about 1.4% of the songbook.** Any statistical claim drawn from this corpus is a
+  claim about thirty songs. Where a v0.1 finding survived the corpus tripling we say so, because
+  that is weak evidence of generality and nothing stronger.
+- **Verification did not scale with the corpus.** v0.1 was 3-of-10 scan-verified; v0.2 is 3-of-30.
+  Growing the song count was cheap once the pipeline existed; checking against print is not, and
+  it is the real constraint. Closing that ratio is what v0.3 is for.
 - **Performance is not notation.** Swaralipi records the composition. Rabindrasangeet in
   performance carries ornamentation, rhythmic elasticity and expressive choices that no page holds.
   Do not mistake this data for how the music sounds.
@@ -81,6 +92,11 @@ a proof of schema and pipeline, and an invitation to scale.
   semantically).
 - **22 note-units across 3 songs** use a source-notation variant we could not fully decode. Pitch
   is confident; the vowel/duration semantics are flagged `uncertain` in the data.
+- **54 glyphs across the corpus could not be decoded at all.** These are recorded as annotation
+  marks on their cell — never guessed into a pitch — so they are visibly missing rather than
+  invisibly wrong.
+- **`beats` (sam/taali/khali) is null for the thirteen taals added in v0.2.** The witness does not
+  mark the clap pattern for them and we have not invented one.
 - **Section labels** (sthayi/antara/…) are inferred from double-bar structure, not stated by the
   witness.
 - **Derived formats are lossy by design.** MIDI and MusicXML cannot hold taal cycle structure or
@@ -119,11 +135,11 @@ of which occupy this niche:
 ```bibtex
 @dataset{banerjee2026swaralipi,
   author  = {Banerjee, Indranil},
-  title   = {Ten Songs of Tagore, In Data: A Symbolic Corpus of Rabindrasangeet Swaralipi},
+  title   = {Songs of Tagore, In Data: A Symbolic Corpus of Rabindrasangeet Swaralipi},
   year    = {2026},
-  version = {0.1.0},
+  version = {0.2.0},
   license = {CC-BY-4.0},
-  url     = {https://github.com/NeelVerse-Lab/tagore-swaralipi}
+  url     = {https://github.com/indranilbanerjee/tagore-swaralipi}
 }
 ```
 

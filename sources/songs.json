@@ -1,0 +1,757 @@
+[
+ {
+  "file": "nltr-purano-0",
+  "id": "purano-sei-diner-katha",
+  "title": {
+   "bn": "পুরানো সেই দিনের কথা",
+   "translit": "Purano sei diner katha"
+  },
+  "parjaay": {
+   "bn": "প্রেম ও প্রকৃতি",
+   "en": "Love and Nature"
+  },
+  "raga_anga": "মিশ্র ভূপালী (Mishra Bhupali), as printed in Swarabitan vol. 32 — a bhanga gaan on the Scots air 'Auld Lang Syne'",
+  "taal": "ektaal",
+  "url": "/node/16053?gaan=পুরানো সেই দিনের কথা ভুলবি কি রে হায়.xml",
+  "secondary": [
+   {
+    "site": "geetabitan.com",
+    "url": "https://www.geetabitan.com/lyrics/P/purano-sei-diner-kotha-lyric.html",
+    "agreement": "taal (ektaal), parjaay, Auld-Lang-Syne origin, written 1885"
+   },
+   {
+    "site": "notesandsargam.com",
+    "url": "https://notesandsargam.com/purano-shei-diner-kotha/",
+    "agreement": "melodic contour matches throughout (independent romanized sargam)"
+   }
+  ],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Lines 1-6 verified against the printed Swarabitan vol. 32 scan (exact match)",
+    "Line 4, matra 5: udara mark on the second ধা is ambiguous in the scan; witness reading kept"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-phule-1",
+  "id": "phule-phule-dhole-dhole",
+  "title": {
+   "bn": "ফুলে ফুলে ঢ'লে ঢ'লে",
+   "translit": "Phule phule dhole dhole"
+  },
+  "parjaay": {
+   "bn": "প্রকৃতি",
+   "en": "Nature"
+  },
+  "raga_anga": "Bhanga gaan — melody adapted from the Scots air 'Ye Banks and Braes'; from the gitinatya Kalmrigaya",
+  "taal": "khemta",
+  "url": "/node/16053?gaan=29_6.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "parjaay attribution traditional, not stated in primary witness"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-anandaloke",
+  "id": "anandaloke-mangalaloke",
+  "title": {
+   "bn": "আনন্দলোকে মঙ্গলালোকে",
+   "translit": "Anandaloke mangalaloke"
+  },
+  "parjaay": {
+   "bn": "পূজা",
+   "en": "Worship (Brahmasangeet)"
+  },
+  "raga_anga": null,
+  "taal": "ektaal",
+  "url": "/node/16053?gaan=আনন্দলোকে মঙ্গলালোকে.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "parjaay attribution traditional, not stated in primary witness"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-ekla",
+  "id": "ekla-chalo-re",
+  "title": {
+   "bn": "যদি তোর ডাক শুনে কেউ না আসে",
+   "translit": "Jodi tor dak shune keu na ase (Ekla chalo re)"
+  },
+  "parjaay": {
+   "bn": "স্বদেশ",
+   "en": "Patriotic"
+  },
+  "raga_anga": "Baul sur",
+  "taal": "dadra",
+  "url": "/node/16053?gaan=যদি তোর ডাক শুনে কেউ না আসে.xml",
+  "secondary": [
+   {
+    "site": "geetabitan.com",
+    "url": "https://www.geetabitan.com/lyrics/J/jodi-tor-daak-shune-lyric.html",
+    "agreement": "taal (dadra), parjaay (Swadesh), Baul anga"
+   },
+   {
+    "site": "notesandsargam.com",
+    "url": "https://notesandsargam.com/jodi-tor-dak-shune-keu-na-ashe-rabindra-sangeet/",
+    "agreement": "melodic contour matches (independent romanized sargam)"
+   }
+  ],
+  "confidence": {
+   "level": "high",
+   "notes": []
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "aguner-nltr",
+  "id": "aguner-poroshmoni",
+  "title": {
+   "bn": "আগুনের পরশমণি ছোঁয়াও প্রাণে",
+   "translit": "Aguner poroshmoni chhoyao prane"
+  },
+  "parjaay": {
+   "bn": "পূজা",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "dadra",
+  "url": "/node/16053?gaan=আগুনের পরশমণি ছোঁয়াও প্রাণে.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "parjaay attribution traditional, not stated in primary witness",
+    "4 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics flagged"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-tumirobe-0",
+  "id": "tumi-robe-nirobe",
+  "title": {
+   "bn": "তুমি রবে নীরবে",
+   "translit": "Tumi robe nirobe"
+  },
+  "parjaay": {
+   "bn": "প্রেম",
+   "en": "Love (Prem-Boichitra)"
+  },
+  "raga_anga": "Behag",
+  "taal": "ektaal",
+  "url": "/node/16053?gaan=তুমি রবে নীরবে হৃদয়ে মম.xml",
+  "secondary": [
+   {
+    "site": "geetabitan.com",
+    "url": "https://www.geetabitan.com/lyrics/T/tumi-robe-nirobe-lyric.html",
+    "agreement": "taal (ektaal), parjaay (Prem), raag Behag, written 1895, notated by Indira Debi Chaudhurani"
+   },
+   {
+    "site": "notesandsargam.com",
+    "url": "https://notesandsargam.com/tumi-robe-nirobe/",
+    "agreement": "melodic contour matches (independent romanized sargam)"
+   }
+  ],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "2 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics flagged"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-majhe",
+  "id": "majhe-majhe-tobo-dekha-pai",
+  "title": {
+   "bn": "মাঝে মাঝে তব দেখা পাই",
+   "translit": "Majhe majhe tobo dekha pai"
+  },
+  "parjaay": {
+   "bn": "পূজা",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "ektaal",
+  "url": "/node/16053?gaan=মাঝে মাঝে তব দেখা পাই.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "parjaay attribution traditional, not stated in primary witness"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-bhalobese-0",
+  "id": "bhalobese-sokhi",
+  "title": {
+   "bn": "ভালোবেসে সখী, নিভৃত যতনে",
+   "translit": "Bhalobese sokhi, nibhrite jotone"
+  },
+  "parjaay": {
+   "bn": "প্রেম",
+   "en": "Love"
+  },
+  "raga_anga": null,
+  "taal": "talamukta",
+  "url": "/node/16053?gaan=ভালোবেসে, সখী, নিভৃত যতনে.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Sthayi verified against the printed Swarabitan vol. 56 scan (exact match)",
+    "talamukta (free rhythm): confirmed by the printed page, which carries no taal line and no vibhag dandas — this overrides a secondary source that lists the song as Dadra",
+    "parjaay attribution traditional, not stated in any witness"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-esho",
+  "id": "esho-shyamalo-sundoro",
+  "title": {
+   "bn": "এসো শ্যামল সুন্দর",
+   "translit": "Esho shyamalo sundoro"
+  },
+  "parjaay": {
+   "bn": "প্রকৃতি (বর্ষা)",
+   "en": "Nature (Monsoon)"
+  },
+  "raga_anga": null,
+  "taal": "tintal",
+  "url": "/node/16053?gaan=এসো শ্যামল সুন্দর.xml",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "parjaay attribution traditional, not stated in primary witness"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "nltr-gram-0",
+  "id": "gram-chhara-oi-ranga-matir-path",
+  "title": {
+   "bn": "গ্রামছাড়া ওই রাঙা মাটির পথ",
+   "translit": "Gram chhara oi ranga matir path"
+  },
+  "parjaay": {
+   "bn": "প্রকৃতি",
+   "en": "Nature"
+  },
+  "raga_anga": "বাংলা (Bangla), as printed in Swarabitan vol. 9",
+  "taal": "kaharba",
+  "url": "/node/16053?gaan=গ্রামছাড়া ওই রাঙা মাটির পথ.xml",
+  "secondary": [
+   {
+    "site": "notesandsargam.com",
+    "url": "https://notesandsargam.com/gram-chhara-oyi-ranga-matir-poth/",
+    "agreement": "melodic contour matches (independent romanized sargam)"
+   }
+  ],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Sthayi verified line-by-line against the printed Swarabitan vol. 9 scan (exact match); raga/taal now taken from the printed header rather than tradition",
+    "12 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics still flagged",
+    "Verification covered line 1; lines 2-21 remain archive-derived"
+   ]
+  },
+  "retrieved": "2026-08-11"
+ },
+ {
+  "file": "amar-matha-nato-kore",
+  "id": "amar-matha-nato-kore",
+  "title": {
+   "bn": "আমার মাথা নত করে দাও",
+   "translit": "Amar matha nato kore dao"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিবিধ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "teora",
+  "url": "/node/16053?gaan=আমার মাথা নত করে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome."
+   ]
+  }
+ },
+ {
+  "file": "bahe-nirantar-anantanandadhara",
+  "id": "bahe-nirantar-anantanandadhara",
+  "title": {
+   "bn": "বহে নিরন্তর অনন্ত আনন্দধারা",
+   "translit": "Bahe nirantar ananta anandadhara"
+  },
+  "parjaay": {
+   "bn": "পূজা - আনন্দ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "jhanp",
+  "url": "/node/16053?gaan=বহে নিরন্তর অনন্ত আনন্দধারা.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "9 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "bipade-more-rokkha-koro",
+  "id": "bipade-more-rokkha-koro",
+  "title": {
+   "bn": "বিপদে মোরে রক্ষা করো",
+   "translit": "Bipade more rokkha koro"
+  },
+  "parjaay": {
+   "bn": "পূজা - দুঃখ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "jhampak",
+  "url": "/node/16053?gaan=বিপদে মোরে রক্ষা করো এ নহে মোর প্রার্থনা.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "6 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches.",
+    "Taal division taken from the printed bar structure: a five-matra avartan divided 3+2. This is the Rabindrik ঝম্পক, not the ten-matra Hindustani Jhaptaal."
+   ]
+  }
+ },
+ {
+  "file": "chirabandhu-chiranirbhar",
+  "id": "chirabandhu-chiranirbhar",
+  "title": {
+   "bn": "চিরবন্ধু চিরনির্ভর চিরশান্তি",
+   "translit": "Chirabandhu chiranirbhar chirashanti"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিবিধ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "sasthi",
+  "url": "/node/16053?gaan=চিরবন্ধু চিরনির্ভর চিরশান্তি.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "aji-jato-tara-tabo-akashe",
+  "id": "aji-jato-tara-tabo-akashe",
+  "title": {
+   "bn": "আজি যত তারা তব আকাশে",
+   "translit": "Aji jato tara tabo akashe"
+  },
+  "parjaay": {
+   "bn": "পূজা - বন্ধু",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "kawwali",
+  "url": "/node/16053?gaan=আজি যত তারা তব আকাশে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "9 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "haroshe-jago-aji",
+  "id": "haroshe-jago-aji",
+  "title": {
+   "bn": "হরষে জাগো আজি",
+   "translit": "Haroshe jago aji"
+  },
+  "parjaay": {
+   "bn": "পূজা - জাগরণ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "dhamar",
+  "url": "/node/16053?gaan=হরষে জাগো আজি.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "8 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "pratidin-tabo-gatha",
+  "id": "pratidin-tabo-gatha",
+  "title": {
+   "bn": "প্রতিদিন তব গাথা গাব আমি সুমধুর",
+   "translit": "Pratidin tabo gatha gabo ami sumadhur"
+  },
+  "parjaay": {
+   "bn": "পূজা - সাধনা ও সংকল্প",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "surfank",
+  "url": "/node/16053?gaan=প্রতিদিন তব গাথা গাব আমি সুমধুর.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome."
+   ]
+  }
+ },
+ {
+  "file": "jagite-hobe-re",
+  "id": "jagite-hobe-re",
+  "title": {
+   "bn": "জাগিতে হবে রে",
+   "translit": "Jagite hobe re"
+  },
+  "parjaay": {
+   "bn": "পূজা - সাধনা ও সংকল্প",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "chautal",
+  "url": "/node/16053?gaan=জাগিতে হবে রে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "1 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "pathe-chole-jete-jete",
+  "id": "pathe-chole-jete-jete",
+  "title": {
+   "bn": "পথে চলে যেতে যেতে",
+   "translit": "Pathe chole jete jete"
+  },
+  "parjaay": {
+   "bn": "পূজা - পথ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "ardha_jhanp",
+  "url": "/node/16053?gaan=পথে চলে যেতে যেতে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "12 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "e-parabase-rabe-ke-hay",
+  "id": "e-parabase-rabe-ke-hay",
+  "title": {
+   "bn": "এ পরবাসে রবে কে হায়",
+   "translit": "E parabase rabe ke hay"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিবিধ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "madhyaman",
+  "url": "/node/16053?gaan=এ পরবাসে রবে কে হায়.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "1 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "amar-prane-gabhir-gopon",
+  "id": "amar-prane-gabhir-gopon",
+  "title": {
+   "bn": "আমার প্রাণে গভীর গোপন",
+   "translit": "Amar prane gabhir gopon"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিশ্ব",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "rupak",
+  "url": "/node/16053?gaan=আমার প্রাণে গভীর গোপন.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "2 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "gabhir-rajani-namilo",
+  "id": "gabhir-rajani-namilo",
+  "title": {
+   "bn": "গভীর রজনী নামিল হৃদয়ে",
+   "translit": "Gabhir rajani namilo hridoye"
+  },
+  "parjaay": {
+   "bn": "পূজা - অন্তর্মুখে",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "rupakra",
+  "url": "/node/16053?gaan=গভীর রজনী নামিল হৃদয়ে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "Uses komal Re (27 notes) — the swara code decoded in v0.2; see docs/DECODING.md.",
+    "3 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ },
+ {
+  "file": "jana-gana-mana",
+  "id": "jana-gana-mana",
+  "title": {
+   "bn": "জনগণমন-অধিনায়ক জয় হে",
+   "translit": "Jana gana mana adhinayaka jaya he"
+  },
+  "parjaay": {
+   "bn": "স্বদেশ",
+   "en": "Patriotic"
+  },
+  "raga_anga": null,
+  "taal": "kaharba",
+  "url": "/node/16053?gaan=জনগণমন-অধিনায়ক জয় হে ভারতভাগ্যবিধাতা.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "krishnakoli-ami-tarei-boli",
+  "id": "krishnakoli-ami-tarei-boli",
+  "title": {
+   "bn": "কৃষ্ণকলি আমি তারেই বলি",
+   "translit": "Krishnakoli ami tarei boli"
+  },
+  "parjaay": {
+   "bn": "বিচিত্র",
+   "en": "Bichitra (Miscellany)"
+  },
+  "raga_anga": null,
+  "taal": "dadra_5",
+  "url": "/node/16053?gaan=কৃষ্ণকলি আমি তারেই বলি.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "Taal conflict, recorded rather than resolved: the witness names the taal দাদরা (normally six matras), but this page prints a five-matra avartan divided 2+3 — bars every five cells, and আবর্তন ৩ across a fifteen-cell line, which is internally consistent. We encode the cycle the page notates. A check against the printed Swarabitan would settle it."
+   ]
+  }
+ },
+ {
+  "file": "alo-amar-alo",
+  "id": "alo-amar-alo",
+  "title": {
+   "bn": "আলো আমার আলো",
+   "translit": "Alo amar alo"
+  },
+  "parjaay": {
+   "bn": "বিচিত্র",
+   "en": "Bichitra (Miscellany)"
+  },
+  "raga_anga": null,
+  "taal": "dadra",
+  "url": "/node/16053?gaan=আলো আমার, আলো ওগো.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "klanti-amar-khoma-koro",
+  "id": "klanti-amar-khoma-koro",
+  "title": {
+   "bn": "ক্লান্তি আমার ক্ষমা করো প্রভু",
+   "translit": "Klanti amar khoma koro probhu"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিরহ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "dadra",
+  "url": "/node/16053?gaan=ক্লান্তি আমার ক্ষমা করো প্রভু.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "ami-chini-go-chini",
+  "id": "ami-chini-go-chini",
+  "title": {
+   "bn": "আমি চিনি গো চিনি তোমারে",
+   "translit": "Ami chini go chini tomare"
+  },
+  "parjaay": {
+   "bn": "প্রেম",
+   "en": "Love"
+  },
+  "raga_anga": null,
+  "taal": "ektaal",
+  "url": "/node/16053?gaan=আমি চিনি গো চিনি তোমারে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "emon-dine-tare-bola-jay",
+  "id": "emon-dine-tare-bola-jay",
+  "title": {
+   "bn": "এমন দিনে তারে বলা যায়",
+   "translit": "Emon dine tare bola jay"
+  },
+  "parjaay": {
+   "bn": "প্রেম",
+   "en": "Love"
+  },
+  "raga_anga": null,
+  "taal": "talamukta",
+  "url": "/node/16053?gaan=এমন দিনে তারে বলা যায়.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "bhenge-mor-gharer-chabi",
+  "id": "bhenge-mor-gharer-chabi",
+  "title": {
+   "bn": "ভেঙে মোর ঘরের চাবি",
+   "translit": "Bhenge mor gharer chabi"
+  },
+  "parjaay": {
+   "bn": "পূজা - বন্ধু",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "dadra",
+  "url": "/node/16053?gaan=ভেঙে মোর ঘরের চাবি নিয়ে যাবি কে আমারে.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "high",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page."
+   ]
+  }
+ },
+ {
+  "file": "path-cheye-je-kete-gelo",
+  "id": "path-cheye-je-kete-gelo",
+  "title": {
+   "bn": "পথ চেয়ে যে কেটে গেল কত দিনে রাতে",
+   "translit": "Path cheye je kete gelo koto dine raate"
+  },
+  "parjaay": {
+   "bn": "পূজা - বিরহ",
+   "en": "Worship"
+  },
+  "raga_anga": null,
+  "taal": "arathheka",
+  "url": "/node/16053?gaan=পথ চেয়ে যে কেটে গেল.xml",
+  "retrieved": "2026-09-02",
+  "secondary": [],
+  "confidence": {
+   "level": "medium",
+   "notes": [
+    "Archive-derived (v0.2): encoded from the online witness; not yet checked against a printed Swarabitan page.",
+    "The witness names the taal but does not state its vibhag division; the division recorded here is the standard one for this taal, cross-checked against the bar structure the notation itself prints. Corrections welcome.",
+    "Uses komal Re (22 notes) — the swara code decoded in v0.2; see docs/DECODING.md.",
+    "2 glyph(s) in the source could not be decoded; they are preserved as annotation marks rather than guessed into pitches."
+   ]
+  }
+ }
+]

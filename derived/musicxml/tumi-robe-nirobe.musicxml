@@ -10,9 +10,6 @@
     <encoding>
       <encoding-date>2026-08-11</encoding-date>
       <software>tagore-swaralipi tools/to_musicxml.py (via music21)</software>
-      <supports element="beam" type="yes" />
-      <supports element="stem" type="yes" />
-      <supports element="accidental" type="yes" />
     </encoding>
   </identification>
   <defaults>

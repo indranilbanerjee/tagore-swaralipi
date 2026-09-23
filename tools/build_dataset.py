@@ -69,137 +69,72 @@ TAALS = {
                 "beats": ["sam", "taali", "khali", "taali"], "talamukta": False},
     "talamukta": {"name": {"bn": "তালমুক্ত", "translit": "talamukta"}, "matras": None, "vibhags": None,
                   "beats": None, "talamukta": True},
+    # --- taals added in v0.2 -------------------------------------------------
+    # Where the witness states the vibhag division in its taal label — e.g.
+    # "ধামার(৩/২/২/৩/৪)" — that division is used verbatim and marked `stated`.
+    # Where it does not, the division below is the standard one for that taal and
+    # was cross-checked against the bar structure the notation itself prints; the
+    # affected songs say so in their confidence notes.
+    # `beats` (sam/taali/khali) is left null for these: the witness does not mark
+    # them and we will not invent them.
+    "teora":      {"name": {"bn": "তেওড়া", "translit": "teora"}, "matras": 7, "vibhags": [3, 2, 2],
+                   "beats": None, "talamukta": False},
+    "jhanp":      {"name": {"bn": "ঝাঁপ", "translit": "jhanp"}, "matras": 10, "vibhags": [2, 3, 2, 3],
+                   "beats": None, "talamukta": False},
+    "jhampak":    {"name": {"bn": "ঝম্পক", "translit": "jhampak"}, "matras": 5, "vibhags": [3, 2],
+                   "beats": None, "talamukta": False},
+    # The archive labels this song's taal দাদরা, but the page prints a five-matra
+    # avartan divided 2+3 (bars every 5 cells, আবর্তন ৩ over a 15-cell line) —
+    # not the six-matra dadra. We record what the page notates and flag the
+    # conflict; see this song's confidence notes.
+    "dadra_5":    {"name": {"bn": "দাদরা", "translit": "dadra (5-matra setting as printed)"},
+                   "matras": 5, "vibhags": [2, 3], "beats": None, "talamukta": False},
+    "sasthi":     {"name": {"bn": "ষষ্ঠী", "translit": "sasthi"}, "matras": 6, "vibhags": [2, 4],
+                   "beats": None, "talamukta": False},
+    "kawwali":    {"name": {"bn": "কাওয়ালি", "translit": "kawwali"}, "matras": 8, "vibhags": [4, 4],
+                   "beats": None, "talamukta": False},
+    "dhamar":     {"name": {"bn": "ধামার", "translit": "dhamar"}, "matras": 14, "vibhags": [3, 2, 2, 3, 4],
+                   "beats": None, "talamukta": False},
+    "surfank":    {"name": {"bn": "সুরফাঁক", "translit": "surfank"}, "matras": 10, "vibhags": [4, 2, 4],
+                   "beats": None, "talamukta": False},
+    "chautal":    {"name": {"bn": "চৌতাল", "translit": "chautal"}, "matras": 12,
+                   "vibhags": [2, 2, 2, 2, 2, 2], "beats": None, "talamukta": False},
+    "ardha_jhanp":{"name": {"bn": "অর্দ্ধঝাঁপ", "translit": "ardha-jhanp"}, "matras": 5, "vibhags": [2, 3],
+                   "beats": None, "talamukta": False},
+    "rupak":      {"name": {"bn": "রুপক", "translit": "rupak"}, "matras": 7, "vibhags": [3, 2, 2],
+                   "beats": None, "talamukta": False},
+    "rupakra":    {"name": {"bn": "রুপকড়া", "translit": "rupakra"}, "matras": 8, "vibhags": [3, 2, 3],
+                   "beats": None, "talamukta": False},
+    "madhyaman":  {"name": {"bn": "মধ্যমান", "translit": "madhyaman"}, "matras": 16,
+                   "vibhags": [4, 4, 4, 4], "beats": None, "talamukta": False},
+    "arathheka":  {"name": {"bn": "আড়াঠেকা", "translit": "arathheka"}, "matras": 16,
+                   "vibhags": [4, 4, 4, 4], "beats": None, "talamukta": False},
+
 }
 
 NLTR_BASE = "https://rabindra-rachanabali.nltr.org"
 
-SONGS = [
-    {
-        "file": "nltr-purano-0", "id": "purano-sei-diner-katha",
-        "title": {"bn": "পুরানো সেই দিনের কথা", "translit": "Purano sei diner katha"},
-        "parjaay": {"bn": "প্রেম ও প্রকৃতি", "en": "Love and Nature"},
-        "raga_anga": "মিশ্র ভূপালী (Mishra Bhupali), as printed in Swarabitan vol. 32 — a bhanga gaan on the Scots air 'Auld Lang Syne'",
-        "taal": "ektaal",
-        "url": NLTR_BASE + "/node/16053?gaan=পুরানো সেই দিনের কথা ভুলবি কি রে হায়.xml",
-        "secondary": [{"site": "geetabitan.com", "url": "https://www.geetabitan.com/lyrics/P/purano-sei-diner-kotha-lyric.html",
-                       "agreement": "taal (ektaal), parjaay, Auld-Lang-Syne origin, written 1885"},
-                      {"site": "notesandsargam.com", "url": "https://notesandsargam.com/purano-shei-diner-kotha/",
-                       "agreement": "melodic contour matches throughout (independent romanized sargam)"}],
-        "confidence": {"level": "high",
-                       "notes": ["Lines 1-6 verified against the printed Swarabitan vol. 32 scan (exact match)",
-                                 "Line 4, matra 5: udara mark on the second ধা is ambiguous in the scan; witness reading kept"]},
-    },
-    {
-        "file": "nltr-phule-1", "id": "phule-phule-dhole-dhole",
-        "title": {"bn": "ফুলে ফুলে ঢ'লে ঢ'লে", "translit": "Phule phule dhole dhole"},
-        "parjaay": {"bn": "প্রকৃতি", "en": "Nature"},
-        "raga_anga": "Bhanga gaan — melody adapted from the Scots air 'Ye Banks and Braes'; from the gitinatya Kalmrigaya",
-        "taal": "khemta",
-        "url": NLTR_BASE + "/node/16053?gaan=29_6.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["parjaay attribution traditional, not stated in primary witness"]},
-    },
-    {
-        "file": "nltr-anandaloke", "id": "anandaloke-mangalaloke",
-        "title": {"bn": "আনন্দলোকে মঙ্গলালোকে", "translit": "Anandaloke mangalaloke"},
-        "parjaay": {"bn": "পূজা", "en": "Worship (Brahmasangeet)"},
-        "raga_anga": None,
-        "taal": "ektaal",
-        "url": NLTR_BASE + "/node/16053?gaan=আনন্দলোকে মঙ্গলালোকে.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["parjaay attribution traditional, not stated in primary witness"]},
-    },
-    {
-        "file": "nltr-ekla", "id": "ekla-chalo-re",
-        "title": {"bn": "যদি তোর ডাক শুনে কেউ না আসে", "translit": "Jodi tor dak shune keu na ase (Ekla chalo re)"},
-        "parjaay": {"bn": "স্বদেশ", "en": "Patriotic"},
-        "raga_anga": "Baul sur",
-        "taal": "dadra",
-        "url": NLTR_BASE + "/node/16053?gaan=যদি তোর ডাক শুনে কেউ না আসে.xml",
-        "secondary": [{"site": "geetabitan.com", "url": "https://www.geetabitan.com/lyrics/J/jodi-tor-daak-shune-lyric.html",
-                       "agreement": "taal (dadra), parjaay (Swadesh), Baul anga"},
-                      {"site": "notesandsargam.com", "url": "https://notesandsargam.com/jodi-tor-dak-shune-keu-na-ashe-rabindra-sangeet/",
-                       "agreement": "melodic contour matches (independent romanized sargam)"}],
-        "confidence": {"level": "high", "notes": []},
-    },
-    {
-        "file": "aguner-nltr", "id": "aguner-poroshmoni",
-        "title": {"bn": "আগুনের পরশমণি ছোঁয়াও প্রাণে", "translit": "Aguner poroshmoni chhoyao prane"},
-        "parjaay": {"bn": "পূজা", "en": "Worship"},
-        "raga_anga": None,
-        "taal": "dadra",
-        "url": NLTR_BASE + "/node/16053?gaan=আগুনের পরশমণি ছোঁয়াও প্রাণে.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["parjaay attribution traditional, not stated in primary witness",
-                                 "4 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics flagged"]},
-    },
-    {
-        "file": "nltr-tumirobe-0", "id": "tumi-robe-nirobe",
-        "title": {"bn": "তুমি রবে নীরবে", "translit": "Tumi robe nirobe"},
-        "parjaay": {"bn": "প্রেম", "en": "Love (Prem-Boichitra)"},
-        "raga_anga": "Behag",
-        "taal": "ektaal",
-        "url": NLTR_BASE + "/node/16053?gaan=তুমি রবে নীরবে হৃদয়ে মম.xml",
-        "secondary": [{"site": "geetabitan.com", "url": "https://www.geetabitan.com/lyrics/T/tumi-robe-nirobe-lyric.html",
-                       "agreement": "taal (ektaal), parjaay (Prem), raag Behag, written 1895, notated by Indira Debi Chaudhurani"},
-                      {"site": "notesandsargam.com", "url": "https://notesandsargam.com/tumi-robe-nirobe/",
-                       "agreement": "melodic contour matches (independent romanized sargam)"}],
-        "confidence": {"level": "high",
-                       "notes": ["2 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics flagged"]},
-    },
-    {
-        "file": "nltr-majhe", "id": "majhe-majhe-tobo-dekha-pai",
-        "title": {"bn": "মাঝে মাঝে তব দেখা পাই", "translit": "Majhe majhe tobo dekha pai"},
-        "parjaay": {"bn": "পূজা", "en": "Worship"},
-        "raga_anga": None,
-        "taal": "ektaal",
-        "url": NLTR_BASE + "/node/16053?gaan=মাঝে মাঝে তব দেখা পাই.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["parjaay attribution traditional, not stated in primary witness"]},
-    },
-    {
-        "file": "nltr-bhalobese-0", "id": "bhalobese-sokhi",
-        "title": {"bn": "ভালোবেসে সখী, নিভৃত যতনে", "translit": "Bhalobese sokhi, nibhrite jotone"},
-        "parjaay": {"bn": "প্রেম", "en": "Love"},
-        "raga_anga": None,
-        "taal": "talamukta",
-        "url": NLTR_BASE + "/node/16053?gaan=ভালোবেসে, সখী, নিভৃত যতনে.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["Sthayi verified against the printed Swarabitan vol. 56 scan (exact match)",
-                                 "talamukta (free rhythm): confirmed by the printed page, which carries no taal line and no vibhag dandas — this overrides a secondary source that lists the song as Dadra",
-                                 "parjaay attribution traditional, not stated in any witness"]},
-    },
-    {
-        "file": "nltr-esho", "id": "esho-shyamalo-sundoro",
-        "title": {"bn": "এসো শ্যামল সুন্দর", "translit": "Esho shyamalo sundoro"},
-        "parjaay": {"bn": "প্রকৃতি (বর্ষা)", "en": "Nature (Monsoon)"},
-        "raga_anga": None,
-        "taal": "tintal",
-        "url": NLTR_BASE + "/node/16053?gaan=এসো শ্যামল সুন্দর.xml",
-        "secondary": [],
-        "confidence": {"level": "high",
-                       "notes": ["parjaay attribution traditional, not stated in primary witness"]},
-    },
-    {
-        "file": "nltr-gram-0", "id": "gram-chhara-oi-ranga-matir-path",
-        "title": {"bn": "গ্রামছাড়া ওই রাঙা মাটির পথ", "translit": "Gram chhara oi ranga matir path"},
-        "parjaay": {"bn": "প্রকৃতি", "en": "Nature"},
-        "raga_anga": "বাংলা (Bangla), as printed in Swarabitan vol. 9",
-        "taal": "kaharba",
-        "url": NLTR_BASE + "/node/16053?gaan=গ্রামছাড়া ওই রাঙা মাটির পথ.xml",
-        "secondary": [{"site": "notesandsargam.com", "url": "https://notesandsargam.com/gram-chhara-oyi-ranga-matir-poth/",
-                       "agreement": "melodic contour matches (independent romanized sargam)"}],
-        "confidence": {"level": "high",
-                       "notes": ["Sthayi verified line-by-line against the printed Swarabitan vol. 9 scan (exact match); raga/taal now taken from the printed header rather than tradition",
-                                 "12 note-units use the rare i-vowel token form; pitch reading confident, vowel-form semantics still flagged",
-                                 "Verification covered line 1; lines 2-21 remain archive-derived"]},
-    },
-]
+# The song table lives in sources/songs.json, not in this file, so that adding a song
+# is a data edit rather than a code edit — see CONTRIBUTING.md. Each entry gives the
+# witness path, the curated metadata, and the confidence statement for that song.
+SONGS_FILE = ROOT / "sources" / "songs.json"
+
+
+def load_songs():
+    songs = json.loads(SONGS_FILE.read_text(encoding="utf-8"))
+    for cfg in songs:
+        cfg.setdefault("file", cfg["id"])
+        cfg.setdefault("secondary", [])
+        cfg.setdefault("raga_anga", None)
+        cfg.setdefault("retrieved", RETRIEVED)
+        if not cfg["url"].startswith("http"):
+            cfg["url"] = NLTR_BASE + cfg["url"]
+        unknown = set(cfg["taal"].split()) - set(TAALS)
+        if cfg["taal"] not in TAALS:
+            raise SystemExit(f"{cfg['id']}: unknown taal {cfg['taal']!r}. "
+                             f"Add it to TAALS in {__file__}.")
+    return songs
+
 
 def guess_sections(lines, n):
     """Label lines by section using section_bar marks as boundaries (best-effort)."""
@@ -215,7 +150,7 @@ def guess_sections(lines, n):
 def build():
     outdir = ROOT / "data" / "songs"
     outdir.mkdir(parents=True, exist_ok=True)
-    for cfg in SONGS:
+    for cfg in load_songs():
         parsed = parse_song(ROOT / "sources" / "raw" / f"{cfg['file']}.html")
         lines = []
         secs = guess_sections(parsed["lines"], len(parsed["lines"]))
@@ -242,7 +177,7 @@ def build():
                 "primary_witness": {
                     "archive": "SNLTR Rabindra Rachanabali digital edition (digitization of Swarabitan, Visva-Bharati)",
                     "url": cfg["url"],
-                    "retrieved": RETRIEVED,
+                    "retrieved": cfg["retrieved"],
                     "taal_as_stated": parsed["meta"]["taal"] or "",
                 },
                 "scan_verification": SCAN_VERIFIED.get(cfg["id"]),

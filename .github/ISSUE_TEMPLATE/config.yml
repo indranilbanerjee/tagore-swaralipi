@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: 💬 Discussion — ideas, questions, musicology
-    url: https://github.com/NeelVerse-Lab/tagore-swaralipi/discussions
+    url: https://github.com/indranilbanerjee/tagore-swaralipi/discussions
     about: For anything that isn't a specific correction or bug. Bengali, Hindi and English all welcome.
   - name: 📖 How to read our notation format
-    url: https://github.com/NeelVerse-Lab/tagore-swaralipi/blob/main/CONTRIBUTING.md#how-to-read-datatext-files
+    url: https://github.com/indranilbanerjee/tagore-swaralipi/blob/main/CONTRIBUTING.md#how-to-read-datatext-files
     about: You don't need to code to contribute. Here's the whole notation in one screen.

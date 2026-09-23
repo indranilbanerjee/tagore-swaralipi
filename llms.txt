@@ -1,6 +1,6 @@
-# Ten Songs of Tagore, In Data (Swaralipi Corpus v0.1)
+# Songs of Tagore, In Data (Swaralipi Corpus v0.2)
 
-> An openly licensed, machine-readable corpus of Rabindrasangeet (Tagore song) notation. Ten songs
+> An openly licensed, machine-readable corpus of Rabindrasangeet (Tagore song) notation. Thirty songs
 > encoded from akarmatrik swaralipi — the Bengali notation system — into a symbolic JSON format
 > that preserves swara, saptak, matra-fraction timing, taal cycles and Bengali lyric alignment.
 > To our knowledge the first such dataset to exist under an open licence.
@@ -9,12 +9,15 @@ Compositions by Rabindranath Tagore (1861-1941), public domain in India since 20
 Data: CC BY 4.0. Code: MIT. Maintained by Indranil (Neel) Banerjee.
 
 ## What is in it
-- 10 songs, 214 notated lines, 2,543 matra-cells, 3,195 note-units
-- Taals covered: ektaal (12), dadra (6), kaharba (8), tintal (16), khemta (6), plus one
-  talamukta (free-rhythm) song
+- 30 songs, 659 notated lines, 8,127 matra-cells, 10,042 note-units
+- 20 taal families: ektaal 12, dadra 6, kaharba 8, tintal 16, khemta 6, teora 7, jhanp 10,
+  jhampak 5, sasthi 6, kawwali 8, dhamar 14, surfank 10, chautal 12, ardha-jhanp 5,
+  madhyaman 16, rupak 7, rupakra 8, arathheka 16, a 5-matra dadra setting, and talamukta
+  (free rhythm, 2 songs)
+- Includes the Indian national anthem (Jana Gana Mana) and two bhanga gaan built on Scots airs
 - Derived MIDI and MusicXML; reference audio synthesized from the notation itself, not recorded
 - Per-song provenance: witness archive, URL, retrieval date, confidence level
-- 3 of 10 songs verified matra-by-matra against scans of the printed Swarabitan
+- 3 of 30 songs verified matra-by-matra against scans of the printed Swarabitan
 
 ## Key documents
 - Overview and quickstart: /README.md
@@ -26,13 +29,18 @@ Data: CC BY 4.0. Code: MIT. Maintained by Indranil (Neel) Banerjee.
 - Plans and open questions: /ROADMAP.md
 - How to contribute (no programming required): /CONTRIBUTING.md
 - The AI continuation experiment: /experiment/EXPERIMENT.md
-- Listen: https://neelverse-lab.github.io/tagore-swaralipi/
+- Listen: https://indranilbanerjee.github.io/tagore-swaralipi/
 
 ## Notable findings
 - পুরানো সেই দিনের কথা: 94.1% of its notes are the Bhupali pentatonic, the rest seven Ni and one
   Ma — matching the printed raga name "Mishra (mixed) Bhupali", measured before that name was known
 - ভালোবেসে সখী is talamukta, not dadra: the printed page carries no taal header and no vibhag bars
-- Across the corpus, Pa falls on sam (beat one) nearly twice as often as Sa
+- Across the corpus, Pa falls on sam (beat one) nearly twice as often as Sa (21.6% vs 12.1%) —
+  a finding that held when the corpus grew from ten songs to thirty
+- v0.2 decoded a missing swara: komal Re, absent from the original decode table
+- v0.2 corrected a taal error by deferring to the notation: jhampak is 5 matras in
+  Rabindrasangeet, not the 10 of Hindustani Jhaptaal
+- sources/catalogue.json maps all 1,568 songs in the witness archive that carry notation
 
 ## Citation
 See /CITATION.cff
